@@ -1,0 +1,33 @@
+#brand-name-nav{
+    font-size: 35px;
+    font-weight:600;
+    color: #ececec;
+}
+.nav-link-cstm{
+    font-size: 25;
+    color: #e0e0e0 !important;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: 0.4 all;
+}
+.nav-link-cstm:hover{
+    color: #e7e7e7 !important;
+}
+.nav-link-cstm::after{
+    content:'';
+    display: block;
+    width:50%;
+    height:3px;
+    border-radius:5px;
+    background-color: #f8005f;
+    transition:width .4s;
+}
+.nav-link-cstm:hover::after{
+    width: 100%;
+    display: block;
+    background-color: #dfdf01;
+    transition: width .4s;
+}
+#nav-bg-clr-cstm{
+    background: #141414a4;
+}
