@@ -4,13 +4,14 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NavBar from './Components/NavBar/NavBar';
+import FullPage from './Components/FullPage/FullPage';
 
 
 function App() {
   return (
     <div>
       <Router>
-      <NavBar></NavBar>
+      <FullPage></FullPage>
       <Switch>
         <Route path="/home">
         
