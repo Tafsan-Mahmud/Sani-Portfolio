@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import NavBar from './Components/NavBar/NavBar';
 import FullPage from './Components/FullPage/FullPage';
 
 

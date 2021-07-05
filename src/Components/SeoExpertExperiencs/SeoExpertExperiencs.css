@@ -1,0 +1,48 @@
+#Seo-Expert-Experiencs-sectioon{
+    height: 100%;
+    width: 100%;
+    background: #13131f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.for-SEOEXPRT-pic img{
+    width: 100%;
+}
+.for-SEOEXPRT-text-card{
+   margin-left: 15px;
+}
+.for-SEOEXPRT-text-card h1{
+    color: #41b30c;
+    font-size: 50px;
+}
+.for-SEOEXPRT-text-card h3{
+    font-weight: 700;
+    color: #cecece;
+}
+.for-SEOEXPRT-text-card p{
+    font-size: 16.5px;
+    color: #ababab;
+}
+.extra-pwr a{
+    text-decoration: none;
+    color: #ff581b;
+    font-weight: 600;
+}
+.extra-pwr{
+    transition: 0.3s ease-in-out;
+}
+.extra-pwr a:hover{
+    color: #46c40c;
+}
+.extra-pwr:hover{
+  
+   transform: translateX(4px);
+}
+
+@media screen and (max-width: 772px ){
+    .for-SEOEXPRT-text-card{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}

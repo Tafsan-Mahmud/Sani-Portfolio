@@ -1,6 +1,5 @@
 import React from 'react';
 import './NavBar.css';
-import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -28,6 +27,9 @@ const NavBar = () => {
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link nav-link-cstm" to="/home">BLOG</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link nav-link-cstm" to="/home">LOGIN</Link>
                             </li>
                         </ul>
                     </div>

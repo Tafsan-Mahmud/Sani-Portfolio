@@ -5,13 +5,14 @@
 }
 .nav-link-cstm{
     font-size: 25;
-    color: #e0e0e0 !important;
+    color: #c5c5c5 !important;
     font-weight: 500;
-    margin-left: 50px;
+    margin-left: 30px;
     transition: 0.4 all;
+    z-index:9999999999;
 }
 .nav-link-cstm:hover{
-    color: #e7e7e7 !important;
+    color: #e0e0e0 !important;
 }
 .nav-link-cstm::after{
     content:'';
@@ -30,4 +31,5 @@
 }
 #nav-bg-clr-cstm{
     background: #141414a4;
+    backdrop-filter: blur(4px);
 }
