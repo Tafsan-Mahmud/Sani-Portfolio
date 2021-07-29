@@ -23,7 +23,9 @@ const MobileServices = () => {
                                         <h3>Optimizations</h3>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam odio temporibus</p>
                                     </div>
-                                    <button data-aos="fade-right" className="mobile-btn">Learn More  <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
+                                    <div data-aos="fade-right">
+                                        <button className="mobile-btn">Learn More  <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
+                                    </div>
                                 </div>
                             </div>
                             <div data-aos="fade-up" className="col-md-6">
