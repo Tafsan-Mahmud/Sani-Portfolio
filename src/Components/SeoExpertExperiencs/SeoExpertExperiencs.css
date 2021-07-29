@@ -28,6 +28,7 @@
     text-decoration: none;
     color: #ff581b;
     font-weight: 600;
+    transition: 0.4s ease-in-out;
 }
 .extra-pwr{
     transition: 0.3s ease-in-out;

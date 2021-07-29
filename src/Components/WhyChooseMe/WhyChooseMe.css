@@ -1,0 +1,33 @@
+.Why-Choose-Me-bg{
+    width: 100%;
+    height: 100%;
+    background: #0f0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-me h1{
+    color: #d3d3d3;
+}
+.choose-me h3{
+    color: #bebebe;  
+}
+.choose-me h2{
+    color: #16be00;
+}
+.choose-me p{
+    color: #afafaf;
+}
+
+.spin-img-chose:hover{
+    animation: App-logo-spin infinite 60s linear;
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
