@@ -1,7 +1,7 @@
 import React from 'react';
 import SEOEXPRTPIC from './3-1170x1170.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsersCog, faChartLine, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsersCog, faChartLine, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import './SeoExpertExperiencs.css';
 
 
