@@ -78,7 +78,7 @@
     padding: 40px;
     background: #bdbdbd44;
     border-radius: 10px;
-
+    backdrop-filter: blur(2px);
 }
 .contactForm-cnt h2{
     font-size: 30px;
