@@ -44,7 +44,7 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                         <div className="contactForm-cnt">
                             <form action="">
                                 <h2>Send Message</h2>
