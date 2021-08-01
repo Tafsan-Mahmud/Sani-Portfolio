@@ -5,8 +5,6 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 
 const DisplyService = (props) => {
-
-
     const { ServiceImage, postId, id, name, ServiceName, ShortDisCription, body, website, allServices } = props.data
     return (
         <div data-aos="fade-up" className="col-md-4 mb-5 pb-5">

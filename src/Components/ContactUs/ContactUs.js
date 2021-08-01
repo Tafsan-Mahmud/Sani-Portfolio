@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContactUs.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faPhoneAlt, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const ContactUs = () => {
@@ -11,7 +11,7 @@ const ContactUs = () => {
                 <div className="cnt-bg-blur">
                     <div className="content-cnt">
                         <h2>Contact Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cumque saepe. Blanditiis, expedita ipsam itaque fuga distinctio Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cumque saepe. Blanditiis, expedita ipsam itaque fuga distinctio Lorem ipsum dolor sit amet consectetur adipisicing...</p>
                     </div>
                     <div className="coontaineeer">
                         <div className="contactInfo-cnt">
@@ -44,7 +44,7 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div className="contactForm-cnt">
                             <form action="">
                                 <h2>Send Message</h2>

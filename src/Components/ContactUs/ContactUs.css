@@ -137,17 +137,22 @@
 .contactForm-cnt .inputBox-cnt input[type="submit"]{
     width: 100px;
     background: #0f0f0f;
-    color: #fff;
+    color: #dfdfdf;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    transition: 0.5s;
-    box-shadow: 4px 3px 10px #272727cc;
+    font-weight: 500;
+    transition: 0.8s;
+    letter-spacing: 1px;
+    box-shadow: 2px 3px 20px #2727279a;
 }
 .contactForm-cnt .inputBox-cnt input[type="submit"]:hover{
-    background: #75001d;
-    transform:translateY(-8px);
+    background: #dfdfdf;
+    transform:translateY(-5px);
+    color:#161616;
+    letter-spacing: 1px;
 }
 .coontaineeer .info-blur-box{
     width: 50%;
