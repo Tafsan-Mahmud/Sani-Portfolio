@@ -71,6 +71,7 @@
     border-radius: 50%;
     font-size: 22px;
     color: #1d1d1d;
+    box-shadow: 2px 3px 3px #505050;
 }
 .coontaineeer .contactInfo-cnt .box-cnt .text-cnt{
     display: flex;
@@ -142,6 +143,7 @@
     padding: 10px;
     font-size: 18px;
     transition: 0.5s;
+    box-shadow: 4px 3px 10px #272727cc;
 }
 .contactForm-cnt .inputBox-cnt input[type="submit"]:hover{
     background: #75001d;
