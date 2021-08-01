@@ -10,7 +10,7 @@
 .cnt-bg-blur{
     position: relative;
     width: 100%;
-    min-height: 110vh;
+    min-height: 100vh;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
@@ -18,6 +18,16 @@
     flex-direction: column;
     backdrop-filter: blur(2px);
 }
+/* .cnt-bg-blur::before{
+    content: '';
+     left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+   width: 100%;
+    background: #1818185e;
+    z-index: -12;
+} */
 .contact-cnt .content-cnt{
     max-width: 800px;
     text-align: center;
@@ -25,11 +35,12 @@
 .contact-cnt .content-cnt h2{
     font-size: 36px;
     font-weight: 500;
-    color: #fff;
+    color: #1d1d1d;
 }
 .contact-cnt .content-cnt p{
-    font-weight: 300;
-    color: #fff;
+    font-weight: 400;
+    color: #1d1d1d;
+    letter-spacing: 1px;
 }
 .coontaineeer{
     width: 100%;
@@ -53,25 +64,27 @@
 .coontaineeer .contactInfo-cnt .box-cnt .icons-cnt{
     min-width: 60px;
     height: 60px;
-    background: #fff;
+    background: #dfdfdf;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
-    color: #0c0c0c;
+    color: #1d1d1d;
 }
 .coontaineeer .contactInfo-cnt .box-cnt .text-cnt{
     display: flex;
     margin-left:20px;
     font-size: 16px;
-    color: #fff;
+    color: #1d1d1d;
     flex-direction: column;
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 .coontaineeer .contactInfo-cnt .box-cnt .text-cnt h3{
     font-weight: 500;
-    color: #111111;
+    color: #1d1d1d;
+    border-bottom: 2px solid #1d1d1d;
 }
 .contactForm-cnt{
     width: 40%;
@@ -82,7 +95,7 @@
 }
 .contactForm-cnt h2{
     font-size: 30px;
-    color: #333;
+    color:#1d1d1d;
     font-weight: 500;
 }
 .contactForm-cnt .inputBox-cnt{
@@ -96,7 +109,7 @@
     padding: 5px 0;
     font-size: 16px;
     border: none;
-    border-bottom:2px solid #333;
+    border-bottom:2px solid #1d1d1d;
     outline: none;
     resize: none;
     background: none;
@@ -108,24 +121,31 @@
     font-size: 16px;
     pointer-events: none;
     transition: 0.5s;
-    color: #666;
+    color:#1d1d1d;
 }
 .contactForm-cnt .inputBox-cnt input:focus ~ span,
 .contactForm-cnt .inputBox-cnt input:valid ~ span,
 .contactForm-cnt .inputBox-cnt textarea:focus ~ span,
 .contactForm-cnt .inputBox-cnt textarea:valid ~ span{
-    color: #e91e63;
-    font-size: 12px;
+    color: #b30018;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
     transform: translateY(-20px);
 }
 .contactForm-cnt .inputBox-cnt input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background: #0f0f0f;
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    transition: 0.5s;
+}
+.contactForm-cnt .inputBox-cnt input[type="submit"]:hover{
+    background: #75001d;
+    transform:translateY(-8px);
 }
 .coontaineeer .info-blur-box{
     width: 50%;
@@ -133,12 +153,10 @@
     backdrop-filter: blur(9px);
     border-radius: 10px;
 }
-.cnt-bg-blur{
-    
-}
+
 @media(max-Width:991px){
     .cnt-bg-blur{
-        padding: 50px;
+        padding: 40px;
     }
     .coontaineeer{
         flex-direction: column;
@@ -152,5 +170,78 @@
     }
     .coontaineeer .info-blur-box{
         width: 100%;
+    }
+    .coontaineeer .contactInfo-cnt .box-cnt .icons-cnt {
+        min-width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .coontaineeer .contactInfo-cnt .box-cnt h3{
+        font-size: 21px;
+    }
+    .contactForm-cnt h2{
+        font-size: 25px;
+    }
+}
+@media(max-Width:1537px){
+    .coontaineeer .info-blur-box{
+        width: 60%;
+    }
+}
+@media(max-Width:1333px){
+    .coontaineeer .info-blur-box{
+        width: 75%;
+    }
+}
+@media(max-Width:1100px){
+    .coontaineeer .info-blur-box{
+        width: 90%;
+    }
+}
+@media(max-Width:990.5px){
+    .coontaineeer .info-blur-box{
+        width: 100%;
+    }
+}
+@media(max-Width:380px){
+    .cnt-bg-blur{
+        padding: 30px;
+    }
+    #cnt-p-ad-f-res{
+        font-size:10px;
+    }
+    #cnt-p-e-f-res{
+        font-size:10px;
+    }
+    
+    
+}
+@media(max-Width:281px){
+    #cnt-p-ad-f-res{
+        font-size:9px;
+    }
+    #cnt-p-e-f-res{
+        font-size:10px;
+    }
+    .cnt-bg-blur{
+        padding: 30px;
+    }
+    .text-mobile-service h1{
+        font-size: 25px;
+    }
+    #MobileServices .mobile-btn {
+        padding: 8px 11px;
+    }
+    #MobileServices .card-mobile-srvc1{
+        width: 244px;
+    }
+    #MobileServices .card-mobile-srvc2{
+        width: 244px;
+    }
+    #MobileServices .card-mobile-srvc2 h3{
+        font-size: 20px;
+    }
+    #MobileServices .card-mobile-srvc1 h3{
+        font-size: 20px;
     }
 }

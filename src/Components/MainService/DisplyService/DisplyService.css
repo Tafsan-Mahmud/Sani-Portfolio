@@ -142,3 +142,18 @@
     align-items: center;
 }
 
+@media(max-Width:358px){
+    .srvc-img-nme h4{
+        font-size: 20px;
+    }
+    .cstm-glow-btn{
+        margin: 2px;
+        font-size:15px;
+    }
+    .srvc-box h6{
+        font-size: 12px;
+    }
+    .srvc-box img{
+        width: 30px;
+    }
+}

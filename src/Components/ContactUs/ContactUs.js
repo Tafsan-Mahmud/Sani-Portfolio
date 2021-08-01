@@ -22,7 +22,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="text-cnt">
                                         <h3>Address</h3>
-                                        <p>4637 pailot Camp Road, <br /> Owatonna,Minnesota,59889</p>
+                                        <p id="cnt-p-ad-f-res">4637 pailot Camp Road, <br /> Owatonna,Minnesota,59889</p>
                                     </div>
                                 </div>
                                 <div className="box-cnt">
@@ -40,7 +40,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="text-cnt">
                                         <h3>Email</h3>
-                                        <p>kjhiwmnaeuh@gmail.com</p>
+                                        <p id="cnt-p-e-f-res">kjhiwmnaeuh@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
