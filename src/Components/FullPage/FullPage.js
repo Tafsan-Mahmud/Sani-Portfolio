@@ -7,7 +7,6 @@ import MobileServices from '../MobileServices/MobileServices';
 import NavBar from '../NavBar/NavBar';
 import SeoExpertExperiencs from '../SeoExpertExperiencs/SeoExpertExperiencs';
 import WhyChooseMe from '../WhyChooseMe/WhyChooseMe';
-
 const FullPage = () => {
     return (
         <div>

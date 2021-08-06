@@ -14,16 +14,16 @@ const NavBar = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <Link class="nav-link nav-link-cstm" to="/home" >HOME</Link>
+                                <Link onClick={() => window.scrollTo(500, 0)} class="nav-link nav-link-cstm" to="/home" >HOME</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link nav-link-cstm" to="/Service" >SERVICES</Link>
+                                <Link onClick={() => window.scrollTo(0, 1250)} class="nav-link nav-link-cstm" href="#Service" >SERVICES</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link nav-link-cstm" to="/SeoExpert">ABOUT ME</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link nav-link-cstm" to="/smplePage">CONTACT</Link>
+                                <Link onClick={() => window.scrollTo(0, 4400)} class="nav-link nav-link-cstm" href="#Contact-us">CONTACT</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link nav-link-cstm" to="/whyChoose">BLOG</Link>
