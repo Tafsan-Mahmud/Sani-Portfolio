@@ -111,9 +111,9 @@
     content: '';
     position: absolute;
     top: 80%;
-    left: 42%;
-    width: 100px;
-    height: 1.3px;
+    left:32.8%;
+    width: 101px;
+    height: 1.5px;
     border-radius: 8px;
     background: #e94a00;
 }
