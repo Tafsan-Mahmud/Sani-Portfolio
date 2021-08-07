@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactUs from '../ContactUs/ContactUs';
 import CustomerReview from '../CustomerReview/CustomerReview';
+import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
 import MainService from '../MainService/MainService';
 import MobileServices from '../MobileServices/MobileServices';
@@ -18,6 +19,7 @@ const FullPage = () => {
             <MobileServices></MobileServices>
             <CustomerReview></CustomerReview>
             <ContactUs></ContactUs>
+            <Footer></Footer>
         </div>
     );
 };
