@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { } from '@fortawesome/free-solid-svg-icons';
-import fi from './social_facebook_fb_75.ico'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -58,7 +57,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <p className="copyright-p">
-                    Copyright @ {(new Date().getFullYear())} MD.Sani Hossain All Rights Reserved
+                    Copyright @ {(new Date().getFullYear())} | MD.Sani Hossain All Rights Reserved
                 </p>
             </div>
         </div>

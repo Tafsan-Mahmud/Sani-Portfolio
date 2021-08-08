@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutMESkills from '../AboutMESkills/AboutMESkills';
 import ContactUs from '../ContactUs/ContactUs';
 import CustomerReview from '../CustomerReview/CustomerReview';
 import Footer from '../Footer/Footer';
@@ -15,6 +16,7 @@ const FullPage = () => {
             <Home></Home>
             <SeoExpertExperiencs></SeoExpertExperiencs>
             <MainService></MainService>
+            <AboutMESkills></AboutMESkills>
             <WhyChooseMe></WhyChooseMe>
             <MobileServices></MobileServices>
             <CustomerReview></CustomerReview>

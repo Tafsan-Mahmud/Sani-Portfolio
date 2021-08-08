@@ -27,4 +27,9 @@
     width: 300px !important;
     height:100% !important;
   }
-  
+@media(max-width: 768px){
+    .top-text-rvw h1{
+        font-size: 35px;
+        margin: 0 20px;
+    }
+}

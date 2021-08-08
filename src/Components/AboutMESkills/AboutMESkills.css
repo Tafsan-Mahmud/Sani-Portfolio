@@ -1,0 +1,76 @@
+#aboutMESkills{
+    height:100% ;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutSkill-pic img{
+    width: 100%;
+}
+.aboutSkill-pic{
+    width: 70%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;  
+}
+
+.aboutSkill-pic::after{
+    content:"";
+    display: block;
+    width:100%;
+    height: 104%;
+    top: 5%;
+    right: -12%;
+    z-index: -1;
+    position: absolute;
+    border:10px solid #e05a00;
+}
+.abt-m-ttl{
+    position: relative;
+    color: #d3d3d3;
+}
+.abt-m-ttl::before{
+    position: absolute;
+    content: '';
+    height: 0.5px;
+    width: 45%;
+    top: 54%;
+    left: 140px;
+    background: #bbbbbb6c;
+}
+.abt-al-cnt p{
+    color: #a1a1a1;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.abt-al-cnt h4{
+    color: #b3b3b3;
+    letter-spacing: 0.5px;
+}
+.abt-srvc-lst{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.abt-srvc-lst span{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #df2d00;
+    padding: 7px 10px;
+    background: #242424af;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .abt-srvc-lst{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

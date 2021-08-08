@@ -18,7 +18,7 @@ const Home = () => {
                     <div className="row d-flex align-items-center justify-content-center">
                         <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4">
                             <div className="home-main-text">
-                                <h5>Hello, im<span>_</span></h5>
+                                <h5>Hello, im</h5>
                                 <h1>Sani Hossain</h1>
                                 <h4><FontAwesomeIcon icon={faBullhorn} /> <Typical steps={['Hello world!', 3000, 'jshdsfad', 3000, 'hisdjbjchbds', 3000, 'Sani hossain', 3000,]} loop={Infinity} wrapper="b" /></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at minima perferendis ut cupiditate dolor optio magnam voluptatem, adipisci vero harum! Consequatur quis a iusto optio ex atque ipsam, dolor ipsum, vel nihil perspiciatis nesciunt. Laborum veritatis, nam accusamus, nesciunt molestias fugiat ratione officiis qui, vero exercitationem magnam est ex?</p>

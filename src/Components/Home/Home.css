@@ -7,14 +7,20 @@
     align-items: center;
 }
 .home-main-text h5{
+   position: relative;
    color: #e05a00;
-   font-size: 32px;
+   font-size: 26px;
    font-weight: 700;
    letter-spacing: 1px;
 }
-.home-main-text span{
-    color: #e05a00;
-    font-size: 35px;
+.home-main-text h5::before{
+    position: absolute;
+    content: '';
+    height: 0.5px;
+    width: 25%;
+    top: 80%;
+    left: 127px;
+    background: #e05a00e3;
 }
 .home-main-text h1{
     color: #e2e2e2f8;
@@ -98,6 +104,9 @@
     }
     .home-image{
         margin-left: 0%;
+    }
+    .home-main-text h1{
+        font-size: 45px;
     }
    
 

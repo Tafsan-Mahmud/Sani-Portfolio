@@ -13,7 +13,7 @@
 .ftr-ttl-tx-dsg::after{
     content:'';
     display: block;
-    width:23%;
+    width:75px;
     height:3.5px;
     margin-top: 5px;
     border-radius:8px;
@@ -110,10 +110,10 @@
 .ftr-scl-mda-icn-dsg h5::before {
     content: '';
     position: absolute;
-    top: 80%;
-    left:32.8%;
-    width: 101px;
-    height: 1.5px;
+    bottom:0;
+    left:33.4%;
+    width:2.5px;
+    height:90%;
     border-radius: 8px;
     background: #e94a00;
 }
@@ -148,6 +148,11 @@
     margin-right: 8px;
     font-size: 23px;
     color: #cecece;
+    transition: 0.4s;
+}
+.lctn-nmbr-mail:hover .icon{
+    margin-right: 10px;
+    color: #e94a00;
 }
 .lctn-nmbr-mail p{
     color:#acacac ;
@@ -156,9 +161,17 @@
     margin-top: 2.5px;
 }
 .copyright-p{
+    position: relative;
     color: #8d8d8d;
     font-size: 17px;
     letter-spacing: 1.5px;
     text-align: center;
     margin-top: 50px;
+}
+@media(max-width: 768px){
+    .ftr-scl-mda-icn-dsg h5::before {
+        content: '';
+        left:45.8%;
+        
+    }
 }
