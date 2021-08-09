@@ -1,0 +1,26 @@
+#Satisfied-Customers{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #090b13;
+}
+.stft-cstmr-mbl-pic img{
+   width: 80%;
+}
+.stft-cstmr-top-txt h3{
+    color: #c4c4c4;
+}
+.stft-cstmr-top-txt p{
+    color: #949494;
+}
+.stft-cstmr-insd-txt-dvx h1{
+    font-size: 60px;
+    color: #00a100;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+.stft-cstmr-insd-txt-dvx h5{
+    color: #bebebe;
+}

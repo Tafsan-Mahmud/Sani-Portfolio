@@ -1,7 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

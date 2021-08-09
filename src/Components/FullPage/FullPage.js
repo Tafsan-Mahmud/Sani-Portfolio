@@ -7,6 +7,7 @@ import Home from '../Home/Home';
 import MainService from '../MainService/MainService';
 import MobileServices from '../MobileServices/MobileServices';
 import NavBar from '../NavBar/NavBar';
+import SatisfiedCustomers from '../SatisfiedCustomers/SatisfiedCustomers';
 import SeoExpertExperiencs from '../SeoExpertExperiencs/SeoExpertExperiencs';
 import WhyChooseMe from '../WhyChooseMe/WhyChooseMe';
 const FullPage = () => {
@@ -20,6 +21,7 @@ const FullPage = () => {
             <WhyChooseMe></WhyChooseMe>
             <MobileServices></MobileServices>
             <CustomerReview></CustomerReview>
+            <SatisfiedCustomers></SatisfiedCustomers>
             <ContactUs></ContactUs>
             <Footer></Footer>
         </div>

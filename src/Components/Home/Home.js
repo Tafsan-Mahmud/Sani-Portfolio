@@ -26,9 +26,18 @@ const Home = () => {
                                 <button type="button" class="ml-4 my-button-cstm-rem"><FontAwesomeIcon icon={faDownload} /> Resume</button>
                             </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4">
+                        <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4 d-flex justify-content-evenly align-items-center">
                             <div className="home-image">
                                 <img src={homeMainPic} alt="" />
+                            </div>
+                            <div className="home-scl-mda-icn-dsg">
+                                <ul>
+                                    <li><a className="sci-dsg-fb-h" href="https://www.facebook.com/sani1288" target="_bold"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a className="sci-dsg-tw-h" href="https://www.facebook.com/sani1288" target="_bold"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a className="sci-dsg-ig-h" href="https://www.facebook.com/sani1288" target="_bold"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a className="sci-dsg-pt-h" href="https://www.facebook.com/sani1288" target="_bold"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a className="sci-dsg-ytb-h" href="https://www.facebook.com/sani1288" target="_bold"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

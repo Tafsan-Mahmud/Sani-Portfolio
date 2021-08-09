@@ -15,11 +15,11 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 const CustomerReview = (e) => {
     return (
         <div id="customer-review">
-            <div className="top-text-rvw pt-5 pb-4 text-center">
+            <div data-aos="fade-down" className="top-text-rvw pt-5 pb-4 text-center">
                 <h1>What Customers Say</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore optio assumenda dolor <br /> magnam laboriosam officiis ullam  earum quos suscipit? Laudantium explicabo <br />non cupiditate enim, quam eos voluptas ea temporibus!</p>
             </div>
-            <Swiper className="mySwiper swiper-container"
+            <Swiper data-aos="fade-up" className="mySwiper swiper-container"
                 effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}
