@@ -20,13 +20,13 @@
     width:50%;
     height:3px;
     border-radius:5px;
-    background-color: #f8005f;
+    background-color:#f8005f;
     transition:width .4s;
 }
 .nav-link-cstm:hover::after{
     width: 100%;
     display: block;
-    background-color: #dfdf01;
+    background-color: #e06c00;
     transition: width .4s;
 }
 #nav-bg-clr-cstm{

@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FullPage from './Components/FullPage/FullPage';
 import SamplePage from './Components/SamplePage/SamplePage';
+import MyBlog from './Components/MyBlog/MyBlog';
 
 
 
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/home">
             <FullPage></FullPage>
+          </Route>
+          <Route path="/My-Blog">
+            <MyBlog></MyBlog>
           </Route>
           <Route path="/smplePage">
             <SamplePage></SamplePage>

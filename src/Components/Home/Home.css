@@ -131,17 +131,6 @@
     position: relative;
 
 }
-.home-scl-mda-icn-dsg::before{
-    content:"";
-    display: block;
-    width:1px;
-    height: 100%;
-    top: 1%;
-    right: -25%;
-    z-index: -1;
-    position: absolute;
-    background: #808080b4;
-}
 
 .home-scl-mda-icn-dsg ul li:hover .sci-dsg-fb-h{
     overflow: hidden;

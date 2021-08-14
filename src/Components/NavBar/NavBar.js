@@ -17,7 +17,7 @@ const NavBar = () => {
                                 <Link onClick={() => window.scrollTo(500, 0)} class="nav-link nav-link-cstm" to="/home" >HOME</Link>
                             </li>
                             <li class="nav-item">
-                                <Link onClick={() => window.scrollTo(0, 1250)} class="nav-link nav-link-cstm" href="#Service" >SERVICES</Link>
+                                <Link onClick={() => window.scrollTo(0, 1250)} class="nav-link nav-link-cstm" to="#Service" >SERVICES</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link nav-link-cstm" to="/SeoExpert">ABOUT ME</Link>
@@ -26,7 +26,7 @@ const NavBar = () => {
                                 <Link onClick={() => window.scrollTo(0, 4400)} class="nav-link nav-link-cstm" href="#Contact-us">CONTACT</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link nav-link-cstm" to="/whyChoose">BLOG</Link>
+                                <Link class="nav-link nav-link-cstm" to="/My-Blog">BLOG</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link nav-link-cstm" to="/home">LOGIN</Link>

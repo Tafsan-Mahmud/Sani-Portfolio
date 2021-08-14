@@ -53,10 +53,10 @@ const Footer = () => {
                             <p className="lctn-nmbr-mail ml-btm-xtra"> mdsanihossain@gmail.com</p>
                         </div>
                     </div>
+                    <p className="copyright-p">
+                        Copyright @ {(new Date().getFullYear())} | MD.Sani Hossain All Rights Reserved
+                    </p>
                 </div>
-                <p className="copyright-p">
-                    Copyright @ {(new Date().getFullYear())} | MD.Sani Hossain All Rights Reserved
-                </p>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 #Footer{
     position: relative;
     background: #111;
-    min-height: 65vh;
+    min-height: 67vh;
 
 }
 .ftr-ttl-tx-dsg{
@@ -166,7 +166,7 @@
     font-size: 17px;
     letter-spacing: 1.5px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 65px;
 }
 @media(max-width: 768px){
     .ftr-scl-mda-icn-dsg h5::before {
