@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FullPage from './Components/FullPage/FullPage';
 import SamplePage from './Components/SamplePage/SamplePage';
 import MyBlog from './Components/MyBlog/MyBlog';
+import BodyDashboard from './Components/Dashboard/BodyDashboard/BodyDashboard';
 
 
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/My-Blog">
             <MyBlog></MyBlog>
+          </Route>
+          <Route path="/Dashboard">
+            <BodyDashboard></BodyDashboard>
           </Route>
           <Route path="/smplePage">
             <SamplePage></SamplePage>

@@ -12,7 +12,7 @@ import SeoExpertExperiencs from '../SeoExpertExperiencs/SeoExpertExperiencs';
 import WhyChooseMe from '../WhyChooseMe/WhyChooseMe';
 const FullPage = () => {
     return (
-        <div>
+        <div> 
             <NavBar></NavBar>
             <Home></Home>
             <SeoExpertExperiencs></SeoExpertExperiencs>
