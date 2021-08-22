@@ -10,12 +10,12 @@ const ContactUs = () => {
         <div id="Contact-us">
             <section className="contact-cnt">
                 <div className="cnt-bg-blur">
-                    <div data-aos="fade-up" className="content-cnt">
+                    <div className="content-cnt">
                         <h2>Contact Us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cumque saepe. Blanditiis, expedita ipsam itaque fuga distinctio Lorem ipsum dolor sit amet consectetur adipisicing...</p>
                     </div>
                     <div className="coontaineeer">
-                        <div data-aos="fade-left" className="contactInfo-cnt">
+                        <div className="contactInfo-cnt">
                             <div className="info-blur-box">
                                 <div className="box-cnt">
                                     <div className="icons-cnt">
@@ -46,7 +46,7 @@ const ContactUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-right" className="contactForm-cnt">
+                        <div className="contactForm-cnt">
                             <form action="">
                                 <h2>Send Message</h2>
                                 <div className="inputBox-cnt">

@@ -33,3 +33,16 @@
     background: #141414a4;
     backdrop-filter: blur(4px);
 }
+
+.rspnv-sbrnd{
+
+}
+
+@media screen and (max-width: 620px ){
+   
+    .rspnv-sbrnd{
+        font-size: 25px !important;
+    }
+   
+
+}

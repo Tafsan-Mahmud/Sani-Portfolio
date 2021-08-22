@@ -7,7 +7,7 @@ const NavBar = () => {
         <div className="fixed-top">
             <nav id="nav-bg-clr-cstm" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <Link class="navbar-brand" id="brand-name-nav" to='/home'><span><i class="fab fa-phoenix-framework"></i></span> The Sani</Link>
+                    <Link class="navbar-brand rspnv-sbrnd" id="brand-name-nav" to='/home'><span><i class="fab fa-phoenix-framework"></i></span> The Sani</Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

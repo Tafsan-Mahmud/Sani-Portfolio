@@ -11,7 +11,7 @@ const WhyChooseMe = () => {
                         <div data-aos="fade-right" className="col-md-6">
                             <img className="w-100 spin-img-chose" src={WhyChooseMeImg} alt="" />
                         </div>
-                        <div data-aos="fade-left" className="col-md-6">
+                        <div data-aos="fade-up" className="col-md-6">
                             <div className="choose-me mb-4">
                                 <h1>Why Choose Me</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minima deserunt molestiae modi tempore atque nam rerum deleniti</p>

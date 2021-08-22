@@ -37,7 +37,7 @@ const MobileServices = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" className="col-md-5">
+                    <div data-aos="fade-up" className="col-md-5">
                         <div className="mobile-service-img-main mt-3 mb-3">
                             <img className="mbl-svc-img" src={MobileServicesImg} alt="" />
                         </div>

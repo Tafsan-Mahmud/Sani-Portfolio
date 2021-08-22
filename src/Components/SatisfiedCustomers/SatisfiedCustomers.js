@@ -15,13 +15,13 @@ const SatisfiedCustomers = () => {
                             <img src={mblPic} alt="" />
                         </div>
                     </div>
-                    <div className="col-md-7 mb-5 mt-5 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-up" className="col-md-7 mb-5 mt-5 d-flex justify-content-center align-items-center">
                         <div className="row">
-                            <div data-aos="fade-down" className="stft-cstmr-top-txt text-center">
+                            <div className="stft-cstmr-top-txt text-center">
                                 <h3>Our Numbers of Satisfied Customers</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia cumque voluptates, sit debitis earum unde quos. Deserunt eos unde hic.</p>
                             </div>
-                            <div data-aos="fade-up" className="col-md-6  d-flex justify-content-center align-items-center">
+                            <div className="col-md-6  d-flex justify-content-center align-items-center">
                                 <div className="stft-cstmr-insd-txt text-center">
                                     <div className="stft-cstmr-insd-txt-dvx mt-1 mb-2">
                                         <h1><CountUp end={145} duration={5} redraw={true}>
@@ -45,7 +45,7 @@ const SatisfiedCustomers = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="fade-left" className="col-md-6 d-flex justify-content-center align-items-center">
+                            <div className="col-md-6 d-flex justify-content-center align-items-center">
                                 <div className="stft-cstmr-insd-txt text-center">
                                     <div className="stft-cstmr-insd-txt-dvx mt-1 mb-2">
                                         <h1><CountUp end={13} duration={3} redraw={true}>

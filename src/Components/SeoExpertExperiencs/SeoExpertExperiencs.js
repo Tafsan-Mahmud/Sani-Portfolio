@@ -24,7 +24,7 @@ const SeoExpertExperiencs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" className="col-md-4 col-sm-6">
+                        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" className="col-md-4 col-sm-6">
                             <div className="for-SEOEXPRT-text-card">
                                 <h1><FontAwesomeIcon icon={faChartLine} /></h1>
                                 <h3>10+ Years Of Experiences</h3>

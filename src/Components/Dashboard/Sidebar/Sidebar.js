@@ -1,38 +1,54 @@
+
 import React from 'react';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 
 const Sidebar = () => {
-    const [showOrLess, setShowOrLess] = useState(false)
-    const toggleSidebar = () => {
+
+    const exampleImg = `https://www.focusedu.org/wp-content/uploads/2018/12/circled-user-male-skin-type-1-2.png`;
+    const exampleName = "MD Sani Hawlader";
+    const removeNameEnd = exampleName.split(' ').slice(0, 2).join(' ');
+
+    const [showOrLess, setShowOrLess] = useState(false);
+    // console.log(showOrLess)
+    const [halfOrFullName, setHalfOrFullName] = useState(true);
+    console.log(halfOrFullName);
+
+    useEffect(() => {
+        if(window.innerWidth < 690){
+            setHalfOrFullName(false)
+        }
+    }, [halfOrFullName]);
+
+    const toggleSidebar = () => { 
         setShowOrLess(!showOrLess)
     }
-    console.log(showOrLess)
-    return (
-        <div id="Sidebar" className={showOrLess ? 'main-Sidebar sidebar-show' : 'main-Sidebar'}>
-            <div className="brand-nm d-flex justify-content-center">
-                {
-                    showOrLess === false && <h2><span><i class="fab fa-phoenix-framework"></i></span> The Sani</h2>
-                }
 
-                <h2 onClick={toggleSidebar}>{showOrLess ? <i class="fas fa-bars"></i> : <i class="fas fa-times"></i>}</h2>
-            </div>
-            <div className="link-sec">
-                <div className="all-Lnk-dv">
-                    <Link className="lnk-stl-cstm" to='/home'><h5><span><i class="fas fa-home"></i></span>
-                     {showOrLess === false && ' Back To Home'}</h5></Link>
-                    <Link className="lnk-stl-cstm" to='/home'>  <h5><span><i class="fab fa-accusoft"></i></span> {showOrLess === false && 'Manage Service'}</h5></Link>
-                    <Link className="lnk-stl-cstm" to='/home'> <h5><span><i class="fas fa-user-cog"></i></span> {showOrLess === false && 'Make Admin'}</h5></Link>
-                    <Link className="lnk-stl-cstm" to='/home'>   <h5><span><i class="fas fa-plus"></i></span> {showOrLess === false && 'Add Service'}</h5></Link>
-                    <Link className="lnk-stl-cstm" to='/home'>  <h5><span><i class="fas fa-sort-amount-down-alt"></i></span> {showOrLess === false && 'Total Order List'}</h5></Link>
-                    <Link className="lnk-stl-cstm" to='/home'> <h5><span><i class="fas fa-list-ul"></i></span> {showOrLess === false && 'Booking List'}</h5></Link>
-                    <Link className="lnk-stl-cstm" to='/home'>  <h5><span><i class="fas fa-star-half-alt"></i></span> {showOrLess === false && 'Review'}</h5></Link>
+    return (
+        <div id="Sidebar" className={showOrLess ? 'main-Sidebar sidebar-active' : 'main-Sidebar'}>
+            <div className="top-nav-sidebar">
+                <span onClick={toggleSidebar}><i class="fas fa-bars"></i></span>
+                <div className="user-sgn-reg-img">
+                    <img src={exampleImg} alt="" />
+                    <h4>{halfOrFullName ? exampleName : removeNameEnd}</h4>
                 </div>
             </div>
-            <div className="logout-btn-sdbr">
-                <button>Log Out <i class="fas fa-sign-out-alt"></i></button>
+            <div className="all-link-sec">
+                <div className="src-lnk-cls-btn">
+                    <h3 onClick={toggleSidebar} className="close-btn-sidebar"><i class="far fa-times-circle"></i></h3>
+                    <div className="main-lnk ">
+                        <Link to='home' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-home"></i></span> Back To Home</h4></Link>
+                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-user-cog"></i></span> Make Admin</h4></Link>
+                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fab fa-accusoft"></i></span> Manage Service</h4></Link>
+                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-plus"></i></span> Add Service</h4></Link>
+                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-sort-amount-down-alt"></i></span> Total Order List</h4></Link>
+                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-list-ul"></i></span> Booking List</h4></Link>
+                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-star-half-alt"></i></span> Review</h4></Link>
+                    </div>
+                </div>
             </div>
         </div>
     );

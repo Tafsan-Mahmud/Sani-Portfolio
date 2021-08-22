@@ -26,7 +26,7 @@ const Home = () => {
                                 <button type="button" class="ml-4 my-button-cstm-rem"><FontAwesomeIcon icon={faDownload} /> Resume</button>
                             </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4 d-flex justify-content-evenly align-items-center">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4 d-flex justify-content-evenly align-items-center">
                             <div className="home-image">
                                 <img src={homeMainPic} alt="" />
                             </div>

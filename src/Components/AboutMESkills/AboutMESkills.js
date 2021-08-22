@@ -13,7 +13,7 @@ const AboutMESkills = () => {
                             <img src={abtWnPic} alt="" />
                         </div>
                     </div>
-                    <div data-aos="fade-left" className="col-md-8">
+                    <div data-aos="fade-up" className="col-md-8">
                         <div className="abt-al-cnt">
                         <h3 className="abt-m-ttl">About Me</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illo et optio. Dolorem dicta molestias soluta dolor voluptatibus.</p>
