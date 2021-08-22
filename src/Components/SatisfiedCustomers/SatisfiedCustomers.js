@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './SatisfiedCustomers.css';
 import mblPic from './cpy.png';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const SatisfiedCustomers = () => {
+    const [animationRSP2, setAnimationRSP2] = useState(false);
+    console.log(animationRSP2);
+    useEffect(() => {
+        if (window.innerWidth < 988) {
+            setAnimationRSP2(true)
+        }
+    }, [animationRSP2])
 
     return (
         <div id="Satisfied-Customers">
@@ -15,7 +22,7 @@ const SatisfiedCustomers = () => {
                             <img src={mblPic} alt="" />
                         </div>
                     </div>
-                    <div data-aos="fade-up" className="col-md-7 mb-5 mt-5 d-flex justify-content-center align-items-center">
+                    <div data-aos={animationRSP2 ? 'fade-up' : 'fade-left'} className="col-md-7 mb-5 mt-5 d-flex justify-content-center align-items-center">
                         <div className="row">
                             <div className="stft-cstmr-top-txt text-center">
                                 <h3>Our Numbers of Satisfied Customers</h3>

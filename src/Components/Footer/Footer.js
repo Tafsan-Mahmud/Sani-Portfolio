@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const [animationRSP8, setAnimationRSP8] = useState(false);
+    console.log(animationRSP8);
+    useEffect(()=>{
+        if (window.innerWidth < 988) {
+            setAnimationRSP8(true)
+        }
+    },[animationRSP8]);
     return (
         <div id="Footer" className="pt-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-5 mb-4">
+                    <div data-aos='fade-right' className="col-md-5 mb-4">
                         <h2 className="ftr-ttl-tx-dsg">About Me</h2>
                         <p className="ftr-abt-p-tx-cl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi odio et fuga. Laboriosam sint quasi itaque, excepturi, earum aperiam eius similique dolorum repellendus voluptatum inventore quis qui nesciunt illum?</p>
                         <div className="ftr-scl-mda-icn-dsg pt-1">
@@ -21,7 +28,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-md-3 mb-4">
+                    <div data-aos='fade-down' className="col-md-3 mb-4">
                         <h2 className="ftr-ttl-tx-dsg">Useful Links</h2>
                         <ul className="useful-links">
                             <li><Link className="nav-link cstm-usefil-lnk" to='/home'>HOME</Link></li>
@@ -32,7 +39,7 @@ const Footer = () => {
                             <li className="lgn-spcl-dsg "><Link className="nav-link cstm-usefil-lnk" to='/home'>LOGIN</Link></li>
                         </ul>
                     </div>
-                    <div className="col-md-4">
+                    <div data-aos={animationRSP8 ? 'fade-up' : 'fade-left'} className="col-md-4">
                         <h2 className="ftr-ttl-tx-dsg">Contact Me</h2>
                         <div className="lctn-nmbr-mail">
                             <div className="icon">

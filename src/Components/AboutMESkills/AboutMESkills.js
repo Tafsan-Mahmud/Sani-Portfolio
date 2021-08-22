@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './AboutMESkills.css';
 import abtWnPic from './IMG_4203-01.jpg';
 
 
 const AboutMESkills = () => {
+    const [animationRSP4, setAnimationRSP4] = useState(false);
+    console.log(animationRSP4);
+    useEffect(()=>{
+        if (window.innerWidth < 988) {
+            setAnimationRSP4(true)
+        }
+    },[animationRSP4]);
+    
     return (
         <div id="aboutMESkills">
             <div className="container">
@@ -13,7 +21,7 @@ const AboutMESkills = () => {
                             <img src={abtWnPic} alt="" />
                         </div>
                     </div>
-                    <div data-aos="fade-up" className="col-md-8">
+                    <div data-aos={animationRSP4 ? 'fade-up' : 'fade-left'} className="col-md-8">
                         <div className="abt-al-cnt">
                         <h3 className="abt-m-ttl">About Me</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illo et optio. Dolorem dicta molestias soluta dolor voluptatibus.</p>

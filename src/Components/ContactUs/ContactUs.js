@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ContactUs.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -6,16 +6,23 @@ import MapForContact from '../MapForContact/MapForContact';
 
 
 const ContactUs = () => {
+    const [animationRSP7, setAnimationRSP7] = useState(false);
+    console.log(animationRSP7);
+    useEffect(()=>{
+        if (window.innerWidth < 988) {
+            setAnimationRSP7(true)
+        }
+    },[animationRSP7]);
     return (
         <div id="Contact-us">
             <section className="contact-cnt">
                 <div className="cnt-bg-blur">
-                    <div className="content-cnt">
+                    <div data-aos='fade-up' className="content-cnt">
                         <h2>Contact Us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cumque saepe. Blanditiis, expedita ipsam itaque fuga distinctio Lorem ipsum dolor sit amet consectetur adipisicing...</p>
                     </div>
                     <div className="coontaineeer">
-                        <div className="contactInfo-cnt">
+                        <div data-aos='fade-right' className="contactInfo-cnt">
                             <div className="info-blur-box">
                                 <div className="box-cnt">
                                     <div className="icons-cnt">
@@ -46,7 +53,7 @@ const ContactUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="contactForm-cnt">
+                        <div data-aos={animationRSP7 ? 'fade-up' : 'fade-left'} className="contactForm-cnt">
                             <form action="">
                                 <h2>Send Message</h2>
                                 <div className="inputBox-cnt">

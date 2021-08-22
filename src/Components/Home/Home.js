@@ -6,11 +6,18 @@ import { faBullhorn, faDownload, faUser } from '@fortawesome/free-solid-svg-icon
 import './Home.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { useState } from 'react';
 
 const Home = () => {
-    useEffect(() => {
-        Aos.init({ duration: 3000 });
-    }, [])
+
+    const [animationRSP, setAnimationRSP] = useState(false);
+    console.log(animationRSP);
+    useEffect(()=>{
+        if (window.innerWidth < 988) {
+            setAnimationRSP(true)
+        }
+    },[animationRSP]);
+    
     return (
         <div id="home">
             <div id="home-section-with-core-content">
@@ -26,7 +33,7 @@ const Home = () => {
                                 <button type="button" class="ml-4 my-button-cstm-rem"><FontAwesomeIcon icon={faDownload} /> Resume</button>
                             </div>
                         </div>
-                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4 d-flex justify-content-evenly align-items-center">
+                        <div data-aos={animationRSP ? 'fade-up' : 'fade-left'} data-aos-anchor-placement="top-bottom" className="col-md-6 mb-4 d-flex justify-content-evenly align-items-center">
                             <div className="home-image">
                                 <img src={homeMainPic} alt="" />
                             </div>

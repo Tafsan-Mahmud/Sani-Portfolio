@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SEOEXPRTPIC from './3-1170x1170.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsersCog, faChartLine, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +6,13 @@ import './SeoExpertExperiencs.css';
 
 
 const SeoExpertExperiencs = () => {
+    const [animationRSP3, setAnimationRSP3] = useState(false);
+    console.log(animationRSP3);
+    useEffect(() => {
+        if (window.innerWidth < 988) {
+            setAnimationRSP3(true)
+        }
+    }, [animationRSP3]);
     return (
         <div id="SeoExpert">
             <div id="Seo-Expert-Experiencs-sectioon" className="pt-5 pb-5">
@@ -24,7 +31,7 @@ const SeoExpertExperiencs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" className="col-md-4 col-sm-6">
+                        <div data-aos={animationRSP3 ? 'fade-down' : 'fade-left'} data-aos-anchor-placement="top-bottom" className="col-md-4 col-sm-6">
                             <div className="for-SEOEXPRT-text-card">
                                 <h1><FontAwesomeIcon icon={faChartLine} /></h1>
                                 <h3>10+ Years Of Experiences</h3>

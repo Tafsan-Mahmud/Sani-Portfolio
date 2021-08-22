@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './MobileServices.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDatabase, faWifi, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import MobileServicesImg from './cpy.png';
 
 const MobileServices = () => {
+    const [animationRSP6, setAnimationRSP6] = useState(false);
+    console.log(animationRSP6);
+    useEffect(()=>{
+        if (window.innerWidth < 988) {
+            setAnimationRSP6(true)
+        }
+    },[animationRSP6]);
     return (
         <div id="MobileServices">
             <div className="container">
@@ -16,7 +23,7 @@ const MobileServices = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, neque <br /> iste sequi blanditiis odit harum maiores eaque voluptatibus <br />Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div className="row">
-                            <div data-aos="fade-up" className="col-md-6">
+                            <div data-aos="fade-up" className="col-md-6 ">
                                 <div className="with-btn">
                                     <div className="card-mobile-srvc1">
                                         <h1><FontAwesomeIcon icon={faDatabase} /></h1>
@@ -37,7 +44,7 @@ const MobileServices = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" className="col-md-5">
+                    <div data-aos={animationRSP6 ? 'fade-up' : 'fade-left'} className="col-md-5">
                         <div className="mobile-service-img-main mt-3 mb-3">
                             <img className="mbl-svc-img" src={MobileServicesImg} alt="" />
                         </div>

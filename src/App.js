@@ -1,15 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FullPage from './Components/FullPage/FullPage';
 import SamplePage from './Components/SamplePage/SamplePage';
 import MyBlog from './Components/MyBlog/MyBlog';
 import BodyDashboard from './Components/Dashboard/BodyDashboard/BodyDashboard';
+import Aos from 'aos';
 
 
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+}, []);
   return (
     <div>
       <Router>
