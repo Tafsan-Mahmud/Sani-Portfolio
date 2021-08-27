@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DarkLightSEC from '../DarkLightSEC/DarkLightSEC';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -33,6 +34,9 @@ const NavBar = () => {
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link nav-link-cstm" to="/home">LOGIN</Link>
+                            </li>
+                            <li class="nav-item d-flex justify-content-cente align-items-center">
+                                <DarkLightSEC></DarkLightSEC>
                             </li>
                         </ul>
                     </div>

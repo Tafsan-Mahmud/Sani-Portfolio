@@ -1,8 +1,13 @@
-#BodyDashboard{
+.BodyDashboard{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: #080b0f;
+    transition: 0.5s;
+}
+#MLight {
+    background: #006eff;
+    transition: 0.5s;
 }
 
 .mgnpdn{

@@ -1,17 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './WhyChooseMe.css';
 import WhyChooseMeImg from './10-1170x722.png';
+import { PageTheme } from '../../App';
 
 const WhyChooseMe = () => {
+    const [mainTheme, setMainTheme] = useContext(PageTheme);
+    console.log(mainTheme);
+
     const [animationRSP5, setAnimationRSP5] = useState(false);
     console.log(animationRSP5);
-    useEffect(()=>{
+
+    const [lightOrDark, setLightOrDark] = useState(mainTheme);
+    console.log(lightOrDark)
+
+    useEffect(() => {
+        const data = JSON.parse(localStorage.getItem('DLMode'));
+        setLightOrDark(data)
+        // console.log(data)
+        // const themeData = () => {
+
+        // }
+    }, [mainTheme]);
+    useEffect(() => {
         if (window.innerWidth < 988) {
             setAnimationRSP5(true)
         }
-    },[animationRSP5]);
+    }, [animationRSP5]);
+
     return (
-        <div id="whyChoose">
+        <div id="whyChoose" className={lightOrDark ? 'add-cls' : ''}>
             <div className="Why-Choose-Me-bg">
                 <div className="container mt-5 mb-5">
                     <div className="row mt-3 mb-3 d-flex justify-content-center align-items-center">

@@ -1,0 +1,130 @@
+.main-admin-sec{
+    width: 100%;
+    min-height: 100vh;
+    background: #080b0f;
+    transition: 1s;
+}
+.add-admin-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 280px;
+}
+.main-admin-sec .add-admin-sec h1{
+    color: #c5c5c5;
+    margin-top: 25px;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+    border: 3px solid #cc4831;
+    padding: 5px 45px;
+}
+.add-content{
+    margin-top: 50px;
+    width:50%;
+    height:100%;
+    background: #121a24;
+    padding: 25px;
+}
+ .add-content .input-data-admin{
+    position: relative;
+    width: 100%;
+    margin: 10px 0 50px;
+}
+.add-content .input-data-admin input{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 17px;
+    border-bottom: 2px solid #a5a5a5;
+    background: none;
+}
+
+.input-data-admin span {
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#c4c4c4;
+}
+
+.add-content .input-data-admin input:focus ~ span,
+.add-content .input-data-admin input:valid ~ span {
+    color: #cc3a20;
+    letter-spacing: .5px;
+    font-weight: 400;
+    transform: translateY(-20px);
+}
+
+.typ-submit-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-content .typ-submit-admin input[type="submit"]{
+    outline: none;
+    border: none;
+    background: #cc3a20;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 5px 20px;
+}
+
+
+.add-content .input-data-admin .underline-admin{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.add-content .input-data-admin .underline-admin::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #cc3a20;
+    transform:scaleX(0);
+    transition:0.5s ;
+}
+.add-content .input-data-admin input:focus ~ .underline-admin::before,
+.add-content .input-data-admin input:valid ~ .underline-admin::before {
+    transform:scaleX(1);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px ){
+    .add-admin-sec{
+        margin-left: 0;
+    }
+    .add-content{
+        width:70%;
+    }
+
+}
+
+@media screen and (max-width: 500px ){
+    .add-content{
+        width:80%;
+    }
+
+}
+
+
+@media screen and (max-width: 400px ){
+    .add-content{
+        width:90%;
+    }
+
+}

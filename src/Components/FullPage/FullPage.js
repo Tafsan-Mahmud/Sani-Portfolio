@@ -10,9 +10,10 @@ import NavBar from '../NavBar/NavBar';
 import SatisfiedCustomers from '../SatisfiedCustomers/SatisfiedCustomers';
 import SeoExpertExperiencs from '../SeoExpertExperiencs/SeoExpertExperiencs';
 import WhyChooseMe from '../WhyChooseMe/WhyChooseMe';
+import './FullPage.css';
 const FullPage = () => {
     return (
-        <div> 
+        <div className="all-sec-pg-dngr"> 
             <NavBar></NavBar>
             <Home></Home>
             <SeoExpertExperiencs></SeoExpertExperiencs>

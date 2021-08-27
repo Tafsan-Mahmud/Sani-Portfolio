@@ -5,7 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
+.add-cls .Why-Choose-Me-bg{
+    background: #fff;
+    color: #1a1a1a !important;
+    transition: 1s;
+}
+
 .choose-me h1{
     color: #d3d3d3;
 }
