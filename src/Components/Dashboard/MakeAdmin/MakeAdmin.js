@@ -12,12 +12,14 @@ const MakeAdmin = () => {
                     <div className="add-content">
                         <form action="">
                             <div className="input-data-admin">
-                                <input required type="text"  name="" />
+                                <input required type="text" name="" />
                                 <div className="underline-admin"></div>
                                 <span>Email</span>
                             </div>
-                            <div className="typ-submit-admin">
-                                <input type="submit" value="Submit" />
+                            <div className="xmpl-admin">
+                                <div className="typ-submit-admin">
+                                    <input type="submit" value="Submit" />
+                                </div>
                             </div>
                         </form>
                     </div>

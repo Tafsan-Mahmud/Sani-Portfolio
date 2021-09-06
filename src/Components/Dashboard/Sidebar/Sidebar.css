@@ -2,9 +2,11 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    position: fixed;
     width: 100%;
     height:75px;
     background: #0c121d;
+    z-index: 2;
 }
 .top-nav-sidebar span{
     margin-left: 8vh;

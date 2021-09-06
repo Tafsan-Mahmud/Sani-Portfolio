@@ -9,6 +9,7 @@ import BodyDashboard from './Components/Dashboard/BodyDashboard/BodyDashboard';
 import Aos from 'aos';
 import { useState } from 'react';
 import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
+import ManageService from './Components/Dashboard/ManageService/ManageService';
 
 export const PageTheme = createContext();
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/make-Admin">
             <MakeAdmin></MakeAdmin>
+          </Route>
+          <Route path="/manage-service">
+            <ManageService></ManageService>
           </Route>
           <Route path="/smplePage">
             <SamplePage></SamplePage>

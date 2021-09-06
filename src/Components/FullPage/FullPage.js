@@ -1,4 +1,5 @@
 import React from 'react';
+import XXXxx from '../../XXXxx';
 import AboutMESkills from '../AboutMESkills/AboutMESkills';
 import ContactUs from '../ContactUs/ContactUs';
 import CustomerReview from '../CustomerReview/CustomerReview';
@@ -25,6 +26,7 @@ const FullPage = () => {
             <SatisfiedCustomers></SatisfiedCustomers>
             <ContactUs></ContactUs>
             <Footer></Footer>
+            {/* <XXXxx></XXXxx> */}
         </div>
     );
 };
