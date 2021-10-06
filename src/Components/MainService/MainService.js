@@ -13,8 +13,7 @@ const MainService = () => {
         fetch(fakedata)
             .then(res => res.json())
             .then(data => setAllServiceData(data));
-    }, [])
-    // console.log(allServiceData);
+    }, []);
     return (
         <div id="Service" className="full-service-page" >
             <div className="container">

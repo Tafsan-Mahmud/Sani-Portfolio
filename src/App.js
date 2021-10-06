@@ -10,6 +10,11 @@ import Aos from 'aos';
 import { useState } from 'react';
 import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
 import ManageService from './Components/Dashboard/ManageService/ManageService';
+import Review from './Components/Dashboard/Review/Review';
+import MyBookingList from './Components/Dashboard/MyBookingList/MyBookingList';
+import TotalOrderList from './Components/Dashboard/TotalOrderList/TotalOrderList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AddService from './Components/Dashboard/AddService/AddService';
 
 export const PageTheme = createContext();
 
@@ -17,7 +22,7 @@ function App() {
   const [mainTheme, setMainTheme] = useState()
   useEffect(() => {
     Aos.init({ duration: 3000 });
-}, []);
+  }, []);
   return (
     <PageTheme.Provider value={[mainTheme, setMainTheme]}>
       <Router>
@@ -40,6 +45,18 @@ function App() {
           <Route path="/manage-service">
             <ManageService></ManageService>
           </Route>
+          <Route path="/review">
+            <Review></Review>
+          </Route>
+          <Route path="/total-order-list">
+            <TotalOrderList></TotalOrderList>
+          </Route>
+          <Route path="/my-booking">
+            <MyBookingList></MyBookingList>
+          </Route>
+          <Route path="/add-service">
+            <AddService></AddService>
+          </Route>
           <Route path="/smplePage">
             <SamplePage></SamplePage>
           </Route>
@@ -48,7 +65,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      </PageTheme.Provider>
+    </PageTheme.Provider>
   );
 }
 

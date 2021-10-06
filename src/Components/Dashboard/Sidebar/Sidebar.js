@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -8,7 +7,6 @@ import './Sidebar.css';
 
 
 const Sidebar = () => {
-
     const exampleImg = `https://www.focusedu.org/wp-content/uploads/2018/12/circled-user-male-skin-type-1-2.png`;
     const exampleName = "MD Sani Hawlader";
     const removeNameEnd = exampleName.split(' ').slice(0, 2).join(' ');
@@ -20,11 +18,8 @@ const Sidebar = () => {
     const themeData = () => {
         return JSON.parse(localStorage.getItem('DLMode'));
     }
-    // console.log(themeData)
     const [themeInside, setThemeInside] = useState(themeData());
     console.log(themeInside)
-
-
 
     useEffect(() => {
         if (window.innerWidth < 690) {
@@ -51,10 +46,10 @@ const Sidebar = () => {
                         <Link to='/home' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-home"></i></span> Back To Home</h4></Link>
                         <Link to='/make-Admin' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-user-cog"></i></span> Make Admin</h4></Link>
                         <Link to='/manage-service' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fab fa-accusoft"></i></span> Manage Service</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-plus"></i></span> Add Service</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-sort-amount-down-alt"></i></span> Total Order List</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-list-ul"></i></span> Booking List</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-star-half-alt"></i></span> Review</h4></Link>
+                        <Link to='/add-service' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-plus"></i></span> Add Service</h4></Link>
+                        <Link to='/total-order-list' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-sort-amount-down-alt"></i></span> Total Order List</h4></Link>
+                        <Link to='/my-booking' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-list-ul"></i></span> Booking List</h4></Link>
+                        <Link to='/review' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-star-half-alt"></i></span> Review</h4></Link>
                     </div>
                     <div className="dsh-brd-D-L-btn">
                         <DarkLightSEC></DarkLightSEC>
@@ -68,10 +63,10 @@ const Sidebar = () => {
                         <Link to='/home' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-home"></i></span> Back To Home</h4></Link>
                         <Link to='/make-Admin' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-user-cog"></i></span> Make Admin</h4></Link>
                         <Link to='/manage-service' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fab fa-accusoft"></i></span> Manage Service</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-plus"></i></span> Add Service</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-sort-amount-down-alt"></i></span> Total Order List</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-list-ul"></i></span> Booking List</h4></Link>
-                        <Link to='#' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-star-half-alt"></i></span> Review</h4></Link>
+                        <Link to='/add-service' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-plus"></i></span> Add Service</h4></Link>
+                        <Link to='/total-order-list' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-sort-amount-down-alt"></i></span> Total Order List</h4></Link>
+                        <Link to='/my-booking' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-list-ul"></i></span> Booking List</h4></Link>
+                        <Link to='/review' Class="cstm-lnk-dsg-sidebar nav-link"><h4><span><i class="fas fa-star-half-alt"></i></span> Review</h4></Link>
                     </div>
                     <div className="dsh-brd-D-L-btn">
                         <DarkLightSEC></DarkLightSEC>

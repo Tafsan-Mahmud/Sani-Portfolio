@@ -10,7 +10,7 @@ const MakeAdmin = () => {
                 <div className="add-admin-sec">
                     <h1>Make an Admin</h1>
                     <div className="add-content">
-                        <form action="">
+                        <form action="" autoComplete="off">
                             <div className="input-data-admin">
                                 <input required type="text" name="" />
                                 <div className="underline-admin"></div>

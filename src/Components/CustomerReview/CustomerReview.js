@@ -27,14 +27,14 @@ const CustomerReview = (e) => {
                 autoplay={{
                     delay: 500,
                     disableOnInteraction: false
-                }}
+                }} 
                 coverflowEffect={{
-                    rotate: 20,
+                    rotate:10,
                     stretch: 0,
-                    depth: 200,
+                    depth:300,
                     modifier: 1,
                     slideShadows: true
-                }}
+                }} 
                 pagination={true}
                 loop={true}
                 onSlideChange={() => console.log('slide entry')}

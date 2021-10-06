@@ -1,0 +1,51 @@
+#total-order-list {
+    width: 100%;
+    min-height: 100vh;
+    background: #080b0f;
+}
+
+#total-odr-list-h1 {
+    padding: 5px 55px;
+    color: #bbbbbb;
+    border: 3px solid #cc4831;
+    letter-spacing: 1.5px;
+    margin-bottom: 10vh;
+}
+
+.mrgin-f-respo-sd-br {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-wrp-content-sec {
+    margin-top: 20vh;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .my-responsive-table{
+    overflow: scroll;
+} */
+
+.order-table-style th {
+    color: #bbbbbb;
+}
+.order-table-style td {
+    color: #aaaaaa;
+}
+
+.nowrap-ttl0ordr {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+    .main-wrp-content-sec {
+        margin-left: 0;
+    }
+}
