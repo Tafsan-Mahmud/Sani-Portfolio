@@ -164,7 +164,10 @@
     transition: 0.5s;
 }
 
-.rvw-all-input .rvw-input-data input:focus~.underline-rvw::before, .rvw-all-input .rvw-input-data input:valid~.underline-rvw::before, .rvw-all-input .rvw-input-data textarea:focus~.underline-rvw2::before, .rvw-all-input .rvw-input-data textarea:valid~.underline-rvw2::before {
+.rvw-all-input .rvw-input-data input:focus~.underline-rvw::before,
+.rvw-all-input .rvw-input-data input:valid~.underline-rvw::before,
+.rvw-all-input .rvw-input-data textarea:focus~.underline-rvw2::before,
+.rvw-all-input .rvw-input-data textarea:valid~.underline-rvw2::before {
     transform: scaleX(1);
 }
 
