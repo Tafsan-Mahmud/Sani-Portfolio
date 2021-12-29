@@ -33,10 +33,11 @@ const AddService = () => {
     const [todoFkDta, setTodoFkDta] = useState([]);
     const [serviceAllData, setServiceAllData] = useState([]);
     const todoArry = todoFkDta.concat().reverse();
-    const [addInput, setAddInput] = useState('');
     const [serviceNameInput, setServiceNameInput] = useState('');
+    const [addInput, setAddInput] = useState('');
+    const [srvsDiscription, setSrvsDiscription] = useState('');
 
-    console.log(serviceNameInput)
+    // console.log(serviceNameInput)
     console.log(serviceAllData)
 
 
@@ -44,8 +45,8 @@ const AddService = () => {
         if (!addInput) {
             alert('Please Write Something')
         } else {
-            const randomId = Math.floor(Math.random() * 1000000);
-            setTodoFkDta([...todoFkDta, { id: Math.floor(Math.random() * 10000), Service: addInput }])
+            // const randomId = Math.floor(Math.random() * 1000000);
+            setTodoFkDta([...todoFkDta, { id: Math.floor(Math.random() * 10000), Service: addInput }]);
             setAddInput('');
         }
 
@@ -54,12 +55,15 @@ const AddService = () => {
         const updateData = [...todoArry].filter(data => data.id !== id);
         setTodoFkDta(updateData);
     }
-    const handleStoreAllData = (e) => {
+    const handleStoreAllData = (x) => {
+        // x.preventDefault()
+
         setServiceAllData({
             ServiceTittle: serviceNameInput,
             serviceImage: srvcPkCmng,
-            lisOfServices: todoFkDta
-        })
+            lisOfServices: todoFkDta,
+            Discription: srvsDiscription
+        });
     }
 
     const modalon = () => {
@@ -88,7 +92,7 @@ const AddService = () => {
                             }
 
                         </div>
-                        <form onSubmit={handleStoreAllData} className="w-100" action='' autoComplete='off'>
+                        <form id='srvs-main-form' onSubmit={handleStoreAllData} className="w-100" action='' autoComplete='off'>
                             <div className="up-section">
                                 <h4>Choose service image</h4>
                                 <input type="file" name="" id="service-image" />
@@ -111,10 +115,10 @@ const AddService = () => {
 
                                         <input id='srvs-todo' placeholder='Write Todo Services' value={addInput} onChange={(e) => setAddInput(e.target.value)} type="text" />
                                         {
-                                            todoArry.length === 6 && <button onClick={modalon} type="button" className='btn-disable' >Add</button>
+                                            todoArry.length === 6 && <button onClick={modalon} type="button" className='srvs-add-btn-disable' ><i class="fas fa-exclamation"></i> Add</button>
                                         }
                                         {
-                                            todoArry.length < 6 && < button type="button" onClick={handleTodoSet}><i class="fas fa-plus"></i> Add</button>
+                                            todoArry.length < 6 && < button className='srvs-add-btn-active' type="button" onClick={handleTodoSet}><i class="fas fa-plus"></i> Add</button>
                                         }
                                     </div>
                                 </div>
@@ -123,6 +127,9 @@ const AddService = () => {
                                         todoArry.map(data => <li key={data.id} className='srvs-todos-dsgn'>{data.Service} <i onClick={() => handleDeleteItem(data.id)} id='srvs-todo-delet-btn' class="far fa-trash-alt"></i></li>
                                         )
                                     }
+                                </div>
+                                <div className="srvs-tex-discription">
+                                    <textarea onChange={(e) => setSrvsDiscription(e.target.value)} required name="description" rows="3"></textarea>
                                 </div>
                             </div>
                             <div className="srvs-sbmt-sec">

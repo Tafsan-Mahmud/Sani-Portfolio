@@ -12,11 +12,11 @@ const TotalOrderList = () => {
     const [allOrderList, setAllOrderList] = useState([])
     useEffect(() => {
 
-        fetch('https://quiet-stream-56783.herokuapp.com/allBooking')
-            .then(res => res.json())
-            .then(data => {
-                setAllOrderList(data);
-            })
+        // fetch('https://quiet-stream-56783.herokuapp.com/allBooking')
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         setAllOrderList(data);
+        //     })
     }, [allOrderList])
 
     return (
@@ -41,7 +41,7 @@ const TotalOrderList = () => {
                                 <tbody className="style-something">
 
                                     {
-                                        allOrderList.map((data, index) =>
+                                        allOrderList.map((data, index) => {
                                             <tr>
                                                 <td className="text-color-p">{index + 1}</td>
                                                 <td className="text-color-p">{data.name}</td>
@@ -51,7 +51,7 @@ const TotalOrderList = () => {
                                                 <td className="text-color-p"><button className="m-bkng-status">{data.status}</button></td>
                                             </tr>
 
-                                        )
+                                        })
                                     }
 
                                 </tbody>
