@@ -18,7 +18,7 @@ const DarkLightSEC = () => {
     }
     
     const [lightOrDark, setLightOrDark] = useState(modeData());
-    // console.log(lightOrDark)
+    console.log(lightOrDark)
 
     useEffect(() => {
 

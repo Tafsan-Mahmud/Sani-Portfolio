@@ -7,7 +7,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const DisplyReview = (props) => {
     console.log(props.onSlide)
-    const { ServiceImage, postId, id, name, ServiceName, ShortDisCription, body, website, allServices } = props.sliderData;
+    const { ServiceImage, postId, id, Star, name, ServiceName, ShortDisCription, body, website, allServices } = props.sliderData;
     const [readM, setReadM] = useState(false)
     console.log(readM)
     const readMoreOrLess = () => {
@@ -26,31 +26,32 @@ const DisplyReview = (props) => {
                 </div>
             </div>
             <div onClick={againChange} className="Star-Rate d-flex justify-content-start align-items-center">
-                <h4>{id === 1 && <div>
-                    <FontAwesomeIcon icon={faStar} />
-                    <FontAwesomeIcon className="star-disable" icon={faStar} />
-                    <FontAwesomeIcon className="star-disable" icon={faStar} />
-                    <FontAwesomeIcon className="star-disable" icon={faStar} />
-                    <FontAwesomeIcon className="star-disable" icon={faStar} /></div>}
-                    {id === 2 && <div>
+                <h4>
+                    {Star === 1 && <div>
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon className="star-disable" icon={faStar} />
+                        <FontAwesomeIcon className="star-disable" icon={faStar} />
+                        <FontAwesomeIcon className="star-disable" icon={faStar} />
+                        <FontAwesomeIcon className="star-disable" icon={faStar} /></div>}
+                    {Star === 2 && <div>
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon className="star-disable" icon={faStar} />
                         <FontAwesomeIcon className="star-disable" icon={faStar} />
                         <FontAwesomeIcon className="star-disable" icon={faStar} /></div>}
-                    {id === 3 && <div>
+                    {Star === 3 && <div>
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon className="star-disable" icon={faStar} />
                         <FontAwesomeIcon className="star-disable" icon={faStar} /></div>}
-                    {id === 4 && <div>
+                    {Star === 4 && <div>
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon className="star-disable" icon={faStar} /></div>}
-                    {id === 5 && <div>
+                    {Star === 5 && <div>
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />
                         <FontAwesomeIcon icon={faStar} />

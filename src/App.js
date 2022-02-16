@@ -15,11 +15,13 @@ import MyBookingList from './Components/Dashboard/MyBookingList/MyBookingList';
 import TotalOrderList from './Components/Dashboard/TotalOrderList/TotalOrderList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddService from './Components/Dashboard/AddService/AddService';
+import Login from './Components/PrivetSection/Login/Login';
 
 export const PageTheme = createContext();
 
 function App() {
-  const [mainTheme, setMainTheme] = useState()
+  const [mainTheme, setMainTheme] = useState(false)
+  console.log(mainTheme)
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
@@ -56,6 +58,9 @@ function App() {
           </Route>
           <Route path="/add-service">
             <AddService></AddService>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="/smplePage">
             <SamplePage></SamplePage>

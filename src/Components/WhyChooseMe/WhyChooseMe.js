@@ -10,16 +10,12 @@ const WhyChooseMe = () => {
     const [animationRSP5, setAnimationRSP5] = useState(false);
     console.log(animationRSP5);
 
-    const [lightOrDark, setLightOrDark] = useState(mainTheme);
+    const [lightOrDark, setLightOrDark] = useState(null);
     console.log(lightOrDark)
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem('DLMode'));
         setLightOrDark(data)
-        // console.log(data)
-        // const themeData = () => {
-
-        // }
     }, [mainTheme]);
     useEffect(() => {
         if (window.innerWidth < 988) {

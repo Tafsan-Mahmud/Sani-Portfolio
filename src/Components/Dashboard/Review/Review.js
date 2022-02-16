@@ -3,10 +3,13 @@ import Sidebar from '../Sidebar/Sidebar';
 // import StarsRating from 'stars-rating';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudUploadAlt, faStar } from '@fortawesome/free-solid-svg-icons';
-import { Rating } from 'react-simple-star-rating'
+import { Rating } from 'react-simple-star-rating';
+import rvwPK from '../AddService/IMG_2258-02.jpg';
+import rvwPKfalse from '../AddService/IMG_4203-01.jpg';
 import './Review.css';
 
 const Review = () => {
+    const rvwPKComing = true;
     const [starCount, setStarCount] = useState(null)
     console.log('my county', starCount);
     const ratingChanged = (value) => {
@@ -19,7 +22,16 @@ const Review = () => {
                 <div className="review-all-input">
                     <h1 id="review-ttl-h">Add a Review</h1>
                     <div className="main-user-inp-rvw">
-                        <form className="w-100 wrap-rvw" action="" autoComplete="off">
+                        <form className="rvw-wrp-frm-all-data w-100 wrap-rvw" action="" autoComplete="off">
+                            <div className="rvw-HW-Sizing">
+                                {
+                                    rvwPKComing && <img id='rvw-incoming-img' src={rvwPK} alt="" />
+                                }
+                                {
+                                    rvwPKComing === false && <img id='rvw-incoming-img' src={rvwPKfalse} alt="" />
+                                }
+                                
+                            </div>
                             <div className="upload-rvw-img-star-rate">
                                 <div className="rvw-up-img">
                                     <p>Upload Your Image</p>
@@ -32,7 +44,7 @@ const Review = () => {
                                         onClick={ratingChanged}
                                         ratingValue={starCount}
                                         fillColor='#ffd700'
-                                        size={44}
+                                        size={40}
                                     />
                                 </div>
                             </div>
@@ -53,8 +65,10 @@ const Review = () => {
                                     <div className="underline-rvw2"></div>
                                 </div>
                             </div>
-                            <div className="typ-submit-Review">
-                                <input type="submit" value="Submit" />
+                            <div className="rvw-wrp-submit-btn">
+                                <div className="typ-submit-Review">
+                                    <input type="submit" value="Submit" />
+                                </div>
                             </div>
                         </form>
                     </div>

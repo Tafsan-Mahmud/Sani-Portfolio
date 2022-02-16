@@ -1,5 +1,5 @@
 import React from 'react';
-import XXXxx from '../../XXXxx';
+
 import AboutMESkills from '../AboutMESkills/AboutMESkills';
 import ContactUs from '../ContactUs/ContactUs';
 import CustomerReview from '../CustomerReview/CustomerReview';
@@ -12,9 +12,13 @@ import SatisfiedCustomers from '../SatisfiedCustomers/SatisfiedCustomers';
 import SeoExpertExperiencs from '../SeoExpertExperiencs/SeoExpertExperiencs';
 import WhyChooseMe from '../WhyChooseMe/WhyChooseMe';
 import './FullPage.css';
+
+
+
+
 const FullPage = () => {
     return (
-        <div className="all-sec-pg-dngr"> 
+        <div className="all-sec-pg-dngr">
             <NavBar></NavBar>
             <Home></Home>
             <SeoExpertExperiencs></SeoExpertExperiencs>
@@ -26,7 +30,6 @@ const FullPage = () => {
             <SatisfiedCustomers></SatisfiedCustomers>
             <ContactUs></ContactUs>
             <Footer></Footer>
-            {/* <XXXxx></XXXxx> */}
         </div>
     );
 };

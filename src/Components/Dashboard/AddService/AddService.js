@@ -29,7 +29,7 @@ const customStyles = {
 };
 const AddService = () => {
 
-    const checkIsComing = false;
+    const checkIsComing = true;
     const [todoFkDta, setTodoFkDta] = useState([]);
     const [serviceAllData, setServiceAllData] = useState([]);
     const todoArry = todoFkDta.concat().reverse();
@@ -70,7 +70,7 @@ const AddService = () => {
         setAddInput('')
         swal({
             title: "Warning",
-            text: "Sorry You can not add More Service List !",
+            text: "Sorry You can not add More Service List !!",
             icon: "warning",
             // buttons: true,
             dangerMode: true,

@@ -1,11 +1,21 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { PageTheme } from '../../App';
 import DarkLightSEC from '../DarkLightSEC/DarkLightSEC';
 import './NavBar.css';
 
 const NavBar = () => {
+    const [mainTheme, setMainTheme] = useContext(PageTheme);
+    const [lightOrDark, setLightOrDark] = useState(null)
+    useEffect(()=>{
+        const DLdata = JSON.parse(localStorage.getItem('DLMode'))
+        setLightOrDark(DLdata)
+    }, [mainTheme])
     return (
-        <div className="fixed-top">
+        <div id={lightOrDark ? 'navModeLight' : ''} className="fixed-top">
             <nav id="nav-bg-clr-cstm" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <Link class="navbar-brand rspnv-sbrnd" id="brand-name-nav" to='/home'><span><i class="fab fa-phoenix-framework"></i></span> The Sani</Link>
@@ -33,7 +43,7 @@ const NavBar = () => {
                                 <Link class="nav-link nav-link-cstm" to="/Dashboard">DASHBOARD</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link nav-link-cstm" to="/home">LOGIN</Link>
+                                <Link class="nav-link nav-link-cstm" to="/login">LOGIN</Link>
                             </li>
                             <li class="nav-item d-flex justify-content-cente align-items-center">
                                 <DarkLightSEC></DarkLightSEC>

@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ScrollToTopBTN from './Components/ScrollToTopBTN/ScrollToTopBTN';
 
 ReactDOM.render(
   <React.StrictMode>
+    <ScrollToTopBTN></ScrollToTopBTN>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

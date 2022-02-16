@@ -11,7 +11,7 @@ const BodyDashboard = () => {
     const [mainTheme, setMainTheme] = useContext(PageTheme);
 
 
-    const [lightOrDark, setLightOrDark] = useState(mainTheme);
+    const [lightOrDark, setLightOrDark] = useState(null);
     const [counting, setCounting] = useState(0)
     const startCount = () => {
         setCounting(counting + 1)
@@ -27,10 +27,6 @@ const BodyDashboard = () => {
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem('DLMode'));
-        // console.log(data)
-        // const themeData = () => {
-
-        // }
         setLightOrDark(data)
     }, [mainTheme]);
 

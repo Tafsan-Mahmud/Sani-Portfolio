@@ -1,7 +1,25 @@
+#navModeLight #brand-name-nav{
+    color: #1d1d1d;
+    transition: 1s;
+}
+#navModeLight .nav-link-cstm{
+    color: #272727 !important ;
+    transition: 1s;
+}
+#navModeLight .nav-link-cstm:hover{
+    color: #141414 !important;
+    transition: 1s;
+}
+#navModeLight #nav-bg-clr-cstm{
+    background: #f4f4f48a;
+    transition: 1s;
+}
+
 #brand-name-nav{
     font-size: 35px;
     font-weight:600;
     color: #ececec;
+    transition: 1s;
 }
 .nav-link-cstm{
     font-size: 25;
@@ -10,9 +28,11 @@
     margin-left: 30px;
     transition: 0.4 all;
     z-index:9999999999;
+    transition: 1s;
 }
 .nav-link-cstm:hover{
     color: #e0e0e0 !important;
+    transition: 1s;
 }
 .nav-link-cstm::after{
     content:'';
@@ -22,16 +42,19 @@
     border-radius:5px;
     background-color:#f8005f;
     transition:width .4s;
+    transition: 1s;
 }
 .nav-link-cstm:hover::after{
     width: 100%;
     display: block;
     background-color: #e06c00;
     transition: width .4s;
+    transition: 1s;
 }
 #nav-bg-clr-cstm{
     background: #141414a4;
     backdrop-filter: blur(4px);
+    transition: 1s;
 }
 
 .rspnv-sbrnd{

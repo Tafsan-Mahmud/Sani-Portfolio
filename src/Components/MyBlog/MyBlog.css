@@ -6,9 +6,110 @@
     background: #0a0d13;
     padding-top: 125px;
 }
+.ttl-blog-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ttl-blog-sec h1{
+    padding: 5px 55px;
+    color: #bbbbbb;
+    border: 3px solid #cc4831;
+    letter-spacing: 1.5px;
+    margin-bottom: 10vh;
+}
+.prjct-ttl-m-blg{
+    position: absolute;
+    width: 150px;
+    padding-bottom: 7px;
+    top: 0;
+    left: 0;
+    margin-left: 7px;
+    border-bottom-left-radius: 15px;
+    color: #bbbbbb;
+    letter-spacing: 1px;
+    border-left: 3px solid #cc4831;
+    border-bottom: 3px solid #cc4831;
+    transition: .4s;
+
+}
+.prjct-ttl-m-blg:hover{
+    padding-left: 20px;
+}
+
+.sample-nav-bar-prjct-blg{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #0a17249b;
+    backdrop-filter: blur(8px);
+    z-index: 5;
+}
+.the-sani-main-logoblg-prjct{
+    color: #c2c2c2;
+    letter-spacing: 0.5px;
+}
+.DLmode-BackHome-blg-prjct{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.DLmode-BackHome-blg-prjct li{
+    color: #b3b3b3;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-right: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.DLmode-BackHome-blg-prjct li:hover{
+    color: #d8d8d8;
+}
+.DLmode-BackHome-blg-prjct span{
+    width: 4px;
+    height: 50px;
+    background: #cc4831;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+/* Make It Responsive  */
+
+
+
+
+@media screen and (max-width: 450px ){
+   
+    .ttl-blog-sec h1{
+        padding: 5px 30px;
+    }
+}
 @media screen and (max-width: 400px ){
    
     #myBlog{
         padding-top: 100px;
+    }
+}
+@media screen and (max-width: 360px ){
+   
+    .ttl-blog-sec h1{
+        font-size: 21px;
+        padding: 5px 10px;
     }
 }
