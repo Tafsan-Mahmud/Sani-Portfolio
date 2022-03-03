@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { PageTheme } from '../../../App';
 import DarkLightSEC from '../../DarkLightSEC/DarkLightSEC';
 import './Sidebar.css';
 
@@ -10,22 +11,25 @@ const Sidebar = () => {
     const exampleImg = `https://www.focusedu.org/wp-content/uploads/2018/12/circled-user-male-skin-type-1-2.png`;
     const exampleName = "MD Sani Hawlader";
     const removeNameEnd = exampleName.split(' ').slice(0, 2).join(' ');
+    const [mainTheme, setMainTheme] = useContext(PageTheme);
+
 
     const [showOrLess, setShowOrLess] = useState(false);
     const [halfOrFullName, setHalfOrFullName] = useState(true);
 
+    const [themeInside, setThemeInside] = useState(null);
 
-    const themeData = () => {
-        return JSON.parse(localStorage.getItem('DLMode'));
-    }
-    const [themeInside, setThemeInside] = useState(themeData());
-    console.log(themeInside)
+    // console.log(themeInside)
 
     useEffect(() => {
+
+        const data = JSON.parse(localStorage.getItem('DLMode'));
+        // setThemeInside(data)
+
         if (window.innerWidth < 690) {
             setHalfOrFullName(false)
         }
-    }, [halfOrFullName, themeInside]);
+    }, [mainTheme]);
     const toggleSidebar = () => {
         setShowOrLess(!showOrLess)
     }
@@ -39,7 +43,7 @@ const Sidebar = () => {
                     <h4>{halfOrFullName ? exampleName : removeNameEnd}</h4>
                 </div>
             </div>
-            <div id="hide-sidebar-ext" className="all-link-sec2">
+            <div id="hide-sidebar-ext" className={themeInside ? 'all-link-sec2 activw-bg-sd-br' : 'all-link-sec2'}>
                 <div className="src-lnk-cls-btn">
                     <h2 id="cstm-sdbr-h3-dsg"><i class="fab fa-phoenix-framework"></i> The Sani</h2>
                     <div className="main-lnk ">
@@ -56,7 +60,7 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-            <div className="all-link-sec">
+            <div className='all-link-sec'>
                 <div className="src-lnk-cls-btn">
                     <h3 onClick={toggleSidebar} className="close-btn-sidebar"><i class="far fa-times-circle"></i></h3>
                     <div className="main-lnk ">

@@ -9,24 +9,6 @@ import { useState } from 'react';
 
 
 
-
-
-Modal.setAppElement('#root');
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transition: '.3s',
-        zindex: '222',
-        transform: 'translate(-50%, -50%)',
-    },
-    overlay: {
-        background: '#00000096'
-    }
-};
 const AddService = () => {
 
     const checkIsComing = true;
@@ -104,11 +86,6 @@ const AddService = () => {
                                     <span>Service Name</span>
                                     <div className="underline-add-srvc"></div>
                                 </div>
-                                {/* <div className="srvc-input-data">
-                                    <input type="text" required name="Name" />
-                                    <span>Service Name</span>
-                                    <div className="underline-add-srvc"></div>
-                                </div> */}
                                 <div className="srvs-todo-add-sec">
                                     <span>Add Services ({6 - todoArry.length})</span>
                                     <div>

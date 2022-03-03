@@ -3,18 +3,22 @@ import { useState } from 'react';
 import swal from 'sweetalert';
 import Modal from 'react-modal';
 import './DisplyManageService.css';
+import srvcPkCmng from './IMG_4203-01.jpg';
+import srvcPkCmng2 from './IMG_2258-02.jpg';
 
 
 Modal.setAppElement('#root');
 const customStyles = {
     content: {
+        padding:'0',
+        border:'0',
         top: '50%',
         left: '50%',
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
-        transition: '.3s',
-        zindex: '222',
+        transition: '1s',
+        zindex: '50',
         transform: 'translate(-50%, -50%)',
     },
     overlay: {
@@ -24,8 +28,10 @@ const customStyles = {
 
 
 const DisplyManageService = (props) => {
-
+   
     const [y, sety] = useState(false)
+
+
     console.log(y);
     const xmpl = () => {
         sety(!y)
@@ -51,7 +57,6 @@ const DisplyManageService = (props) => {
                 }
             });
     }
-    let subtitle;
     const [modalIsOpen, setIsOpen] = useState(false);
 
     function openModal() {
@@ -60,7 +65,7 @@ const DisplyManageService = (props) => {
 
     function afterOpenModal() {
         // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
+        // subtitle.style.color = '#f00';
     }
 
     function closeModal() {
@@ -88,24 +93,14 @@ const DisplyManageService = (props) => {
                 <button onClick={openModal} id="edit-mng-btn">Edit Text</button>
                 <button onClick={modalon} id="delete-mng-btn">Delete</button>
             </div>
-            <Modal
-                isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={false}
-                style={customStyles}
-
-                contentLabel="Example Modal"
-            >
-                <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+            <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={false} style={customStyles} contentLabel="Example Modal" >
                 <button onClick={closeModal}>close</button>
-                <div>I am a modal</div>
-                <form>
-                    <input />
-                    <button>tab navigation</button>
-                    <button>stays</button>
-                    <button>inside</button>
-                    <button>the modal</button>
-                </form>
+                <div className="Manage-Service-Editing-sec">
+                    {/* copy-code */}
+
+
+                    {/* copy-code */}
+                </div>
             </Modal>
         </div>
     );
