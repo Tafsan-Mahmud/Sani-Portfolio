@@ -6,17 +6,17 @@ import Modal from 'react-modal';
 import srvcPkCmng from './IMG_4203-01.jpg';
 import srvcPkCmng2 from './IMG_2258-02.jpg';
 import { useState } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 const AddService = () => {
 
     const checkIsComing = true;
+    const [addInput, setAddInput] = useState('');
     const [todoFkDta, setTodoFkDta] = useState([]);
     const [serviceAllData, setServiceAllData] = useState([]);
-    const todoArry = todoFkDta.concat().reverse();
     const [serviceNameInput, setServiceNameInput] = useState('');
-    const [addInput, setAddInput] = useState('');
     const [srvsDiscription, setSrvsDiscription] = useState('');
 
     // console.log(serviceNameInput)
@@ -34,7 +34,7 @@ const AddService = () => {
 
     }
     const handleDeleteItem = (id) => {
-        const updateData = [...todoArry].filter(data => data.id !== id);
+        const updateData = [...todoFkDta].filter(data => data.id !== id);
         setTodoFkDta(updateData);
     }
     const handleStoreAllData = (x) => {
@@ -78,7 +78,7 @@ const AddService = () => {
                             <div className="up-section">
                                 <h4>Choose service image</h4>
                                 <input type="file" name="" id="service-image" />
-                                <label htmlFor="service-image">Upload Photo</label>
+                                <label htmlFor="service-image"><FontAwesomeIcon icon={faCloudUploadAlt} /> Upload Photo</label>
                             </div>
                             <div className="add-srvc-all-input">
                                 <div className="srvc-input-data">
@@ -87,25 +87,26 @@ const AddService = () => {
                                     <div className="underline-add-srvc"></div>
                                 </div>
                                 <div className="srvs-todo-add-sec">
-                                    <span>Add Services ({6 - todoArry.length})</span>
-                                    <div>
+                                    <span>Add Services ({6 - todoFkDta.length})</span>
+                                    <div className='srvc-todo-add-OR-not-add-btn'>
 
                                         <input id='srvs-todo' placeholder='Write Todo Services' value={addInput} onChange={(e) => setAddInput(e.target.value)} type="text" />
                                         {
-                                            todoArry.length === 6 && <button onClick={modalon} type="button" className='srvs-add-btn-disable' ><i class="fas fa-exclamation"></i> Add</button>
+                                            todoFkDta.length === 6 && <button onClick={modalon} type="button" className='srvs-add-btn-disable' ><i class="fas fa-exclamation"></i> Add</button>
                                         }
                                         {
-                                            todoArry.length < 6 && < button className='srvs-add-btn-active' type="button" onClick={handleTodoSet}><i class="fas fa-plus"></i> Add</button>
+                                            todoFkDta.length < 6 && < button className='srvs-add-btn-active' type="button" onClick={handleTodoSet}><i class="fas fa-plus"></i> Add</button>
                                         }
                                     </div>
                                 </div>
                                 <div className="srvs-todo-listed-sec">
                                     {
-                                        todoArry.map(data => <li key={data.id} className='srvs-todos-dsgn'>{data.Service} <i onClick={() => handleDeleteItem(data.id)} id='srvs-todo-delet-btn' class="far fa-trash-alt"></i></li>
+                                        todoFkDta.concat().reverse().map(data => <li key={data.id} className='srvs-todos-dsgn'>{data.Service} <i onClick={() => handleDeleteItem(data.id)} id='srvs-todo-delet-btn' class="far fa-trash-alt"></i></li>
                                         )
                                     }
                                 </div>
                                 <div className="srvs-tex-discription">
+                                    <span>Discription</span>
                                     <textarea onChange={(e) => setSrvsDiscription(e.target.value)} required name="description" rows="3"></textarea>
                                 </div>
                             </div>

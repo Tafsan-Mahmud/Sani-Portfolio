@@ -7,9 +7,7 @@ import { useEffect } from 'react';
 
 const ScrollToTopBTN = () => {
     const [scroll, setScroll] = useState(false);
-    const handleScrolly = () => {
-        window.scrollTo(500, 0)
-    }
+    const handleScrolly = () => window.scrollTo({top:0, behavior:'smooth'});
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {

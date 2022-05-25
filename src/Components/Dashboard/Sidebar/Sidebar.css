@@ -81,6 +81,9 @@
     cursor: pointer;
     transition: 0.2s;
 }
+.selected-sidbar-Link{
+    background: tomato;
+}
 .main-lnk h4 span{
     color: tomato;
     transition: 0.2s;

@@ -73,9 +73,9 @@ const TotalOrderList = () => {
                                                     {data.Status}
                                                 </button>
                                                 <ul className="dropdown-menu bg-drpdwn-ttl-ord-lst" aria-labelledby="dropdownMenuButton1">
-                                                    <li class="dropdown-item dropdown-item-cstm" onClick=''>Pending</li>
-                                                    <li class="dropdown-item dropdown-item-cstm" onClick=''>On going</li>
-                                                    <li class="dropdown-item dropdown-item-cstm" onClick=''>Done</li>
+                                                    <li class="dropdown-item dropdown-item-cstm-p" onClick=''>Pending</li>
+                                                    <li class="dropdown-item dropdown-item-cstm-p" onClick=''>On going</li>
+                                                    <li class="dropdown-item dropdown-item-cstm-p" onClick=''>Done</li>
                                                 </ul>
                                             </div>
 

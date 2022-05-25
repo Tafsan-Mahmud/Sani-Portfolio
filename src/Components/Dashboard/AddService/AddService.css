@@ -102,7 +102,6 @@
 .add-srvc-all-input .srvc-input-data {
     position: relative;
     width: 100%;
-    margin-top: 25px;
 }
 
 .add-srvc-all-input .srvc-input-data input {
@@ -158,20 +157,8 @@
     flex-direction: column;
     margin-bottom: 13px;
 }
-
-.srvs-todo-add-sec .srvs-add-btn-disable {
-    outline: none;
-    border: none;
-    background: #d40909;
-    color: #d1d1d1;
-    padding: 7px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: 0.3s;
-}
-
-.srvs-todo-add-sec .srvs-add-btn-disable:hover {
-    background: #b80808;
+.srvc-todo-add-OR-not-add-btn{
+    display: flex;
 }
 
 .srvs-todo-add-sec span {
@@ -192,7 +179,20 @@
     border-bottom-left-radius: 10px;
     padding: 5px;
 }
+.srvs-todo-add-sec .srvs-add-btn-disable {
+    outline: none;
+    border: none;
+    background: #d40909;
+    color: #d1d1d1;
+    padding: 7px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
 
+.srvs-todo-add-sec .srvs-add-btn-disable:hover {
+    background: #b80808;
+}
 .srvs-todo-add-sec .srvs-add-btn-active {
     outline: none;
     border: none;
@@ -314,6 +314,10 @@
     width: 100%;
     margin-top: 15px;
 }
+.srvs-tex-discription span{
+    color: #c4c4c4;
+    font-size: 18px;
+}
 
 .srvs-tex-discription textarea {
     width: 100%;
@@ -323,6 +327,7 @@
     border-radius: 10px;
     color: #bbbbbb;
     padding: 7px;
+    margin-top: 10px;
 }
 
 #srvs-main-form {
