@@ -124,7 +124,6 @@
     width: 600px;
     height: 100%;
     padding: 20px;
-    overflow: visible !important;
     position: relative;
     background: #dfdfdf;
 }
@@ -149,14 +148,16 @@
     background: #d5d5d5;
     z-index: -1;
 }
-
+.manage-up-fack-image{
+    display: flex;
+}
 .manage-up-section input[type=file] {
     display: none;
 }
 
 .manage-up-section h4 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #151515;
     letter-spacing: 1.5px;
     font-weight: 600;
@@ -176,11 +177,11 @@
 
 .manage-up-section label {
     border-radius: 5px;
-    padding: 5px 12px;
+    padding: 2px 4px;
     color: #43a722;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
-    border: 2px solid #43a722;
+    border: 1.5px solid #43a722;
     background-color: #cbebd9ed;
     transition: 0.4s;
     cursor: pointer;
@@ -188,12 +189,20 @@
 
 .manage-up-section label:hover {
     color: #242424;
-    border: 2px solid #242424;
+    border: 1.6px solid #242424;
     background-color: #91b49eed;
+}
+.manage-service-image-edit{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.manage-service-image-edit img{
+    width: 100%;
 }
 
 .manage-srvs-all-inputs {
-    margin-top: 5vh;
+    margin-top: 2.5vh;
 }
 
 .manage-srvc-name-input-data {
@@ -203,9 +212,10 @@
 
 .manage-srvs-all-inputs .manage-srvc-name-input-data input {
     width: 100%;
-    padding: 10px 0;
-    font-size: 17px;
-    color: #1d1d1d;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    color: #000000;
     border: none;
     border-bottom: 1.8px solid #373737;
     outline: none;
@@ -246,7 +256,7 @@
 }
 
 .manage-srvs-all-inputs .manage-srvc-name-input-data input:focus~span, .manage-srvs-all-inputs .manage-srvc-name-input-data input:valid~span {
-    transform: translateY(-20px);
+    transform: translateY(-19px);
 }
 
 .manage-srvc-todo-add-not-add-btn {
@@ -272,7 +282,7 @@
     border-left: 1.8px solid #373737;
     border-bottom: 1.8px solid #373737;
     background: none;
-    color: #1a1a1a;
+    color: #000000;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 5px;
@@ -288,9 +298,11 @@
     letter-spacing: 0.5px;
     transition: 0.3s;
 }
+
 .manage-srvc-todo-add-sec .manage-srvs-add-btn-disable:hover {
     background: #b80808;
 }
+
 .manage-srvc-todo-add-sec .manage-srvs-add-btn-active {
     outline: none;
     border: none;
@@ -301,27 +313,30 @@
     letter-spacing: 0.5px;
     transition: 0.3s;
 }
+
 .manage-srvc-todo-add-sec .manage-srvs-add-btn-active:hover {
     background: #319b0e;
 }
 
-.manage-srvs-todo-listed{
+.manage-srvs-todo-listed {
     display: flex;
     flex-wrap: wrap;
 }
+
 .manage-srvs-todos-dsgn {
     color: #cfcfcf;
     font-weight: 400;
     background: #cc3a20ed;
     list-style: none;
-    padding: 5px 8px;
-    margin-top: 5px;
-    margin-right: 5px;
+    padding: 4px 5px;
+    margin-top: 4px;
+    margin-right: 4px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #manage-srvs-todo-delet-btn {
     height: 27px;
     width: 27px;
@@ -343,26 +358,28 @@
     width: 100%;
     margin-top: 15px;
 }
-.manage-srvs-tex-discription span{
+
+.manage-srvs-tex-discription span {
     color: #151515;
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 5px;
 }
+
 .manage-srvs-tex-discription textarea {
     width: 100%;
     outline: none;
     background: transparent;
     border: 1.8px solid #373737;
     border-radius: 10px;
-    color: #1a1a1a;
+    color: #000000;
     padding: 7px;
     margin-top: 10px;
 }
 
 .manage-srvs-sbmt-sec {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -430,24 +447,35 @@
 
 
 
-    @media screen and (max-width: 1385px) {}
+@media screen and (max-width: 1234px) {
+    .Manage-Service-Editing-sec {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .Manage-Service-Editing-sec {
+        width: 280px;
+    }
+    .manage-srvc-todo-add-sec input {
+        width: 70%;
+    }
+}
 
-    @media screen and (max-width: 1100px) {}
 
-    @media screen and (max-width: 970px) {}
+@media screen and (max-width: 970px) {}
 
-    @media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {}
 
-    @media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {}
 
-    @media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {}
 
-    @media screen and (max-width: 422px) {}
+@media screen and (max-width: 422px) {}
 
-    @media screen and (max-width: 372px) {}
+@media screen and (max-width: 372px) {}
 
-    @media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {}
 
-    @media screen and (max-width: 334px) {}
+@media screen and (max-width: 334px) {}
 
-    @media screen and (max-width: 280px) {}
+@media screen and (max-width: 280px) {}

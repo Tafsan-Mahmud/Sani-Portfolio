@@ -1,47 +1,53 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import swal from 'sweetalert';
 import Modal from 'react-modal';
 import './DisplyManageService.css';
-import srvcPkCmng from './IMG_4203-01.jpg';
-import srvcPkCmng2 from './IMG_2258-02.jpg';
-import AddService from '../AddService/AddService';
+import srvcPkCmng from './219983.png';
+import srvcPkCmng2 from './768px-Circle-icons-profile.svg.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudUploadAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
-
-
 Modal.setAppElement('#root');
-const customStyles = {
-    content: {
-        padding: '0',
-        border: '0',
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        overflow: "visible",
-        transition: '1s',
-        zindex: '50',
-        transform: 'translate(-50%, -50%)',
-    },
-    overlay: {
-        background: '#00000096'
-    }
-};
+
 
 
 const DisplyManageService = (props) => {
-
+    const fackUserIsComing = false
+    const [modalPosition, setModalPosition] = useState({
+        trues: '-20% ,-80%',
+        falses: '-50% , -50%'
+    })
+    // const trueModal = '-40% ,-60%';
+    // const falseModal = '-50% , -50%';
+    const [modaltransform, setModaltransform] = useState(true)
+    console.log(modaltransform)
     const [addInput, setAddInput] = useState('')
     const [todoArraydata, setTodoArraydata] = useState([])
-
-
-
+    useEffect(() => {
+        if (window.innerWidth < 800) {
+            setModaltransform(false)
+        }
+    }, [])
+    const customStyles = {
+        content: {
+            padding: '0',
+            border: '0',
+            top: `${modaltransform ? '80%' : '50%'}`,
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            overflow: "visible",
+            transition: '1s',
+            zindex: '50',
+            transform: `translate(${modaltransform ? modalPosition.trues : modalPosition.falses})`,
+        },
+        overlay: {
+            background: '#00000096'
+        }
+    };
     console.log(todoArraydata);
-
-
     const modalon = () => {
         swal({
             title: "Are you sure?",
@@ -127,7 +133,15 @@ const DisplyManageService = (props) => {
                         <div className="manage-up-section">
                             <h4>Choose service image</h4>
                             <input type="file" name="" id="service-image" />
-                            <label htmlFor="service-image"><FontAwesomeIcon icon={faCloudUploadAlt} /> Upload Photo</label>
+                            <div className='manage-up-fack-image'>
+                                <label htmlFor="service-image"><FontAwesomeIcon icon={faCloudUploadAlt} /> Upload Photo</label>
+                                <div className="manage-service-image-edit">
+                                    {
+                                        fackUserIsComing ? <img src={srvcPkCmng} alt="" /> : <img src={srvcPkCmng2} alt="" />
+                                    }
+                                </div>
+                            </div>
+
                         </div>
                         <div className="manage-srvs-all-inputs">
                             <div className="manage-srvc-name-input-data">
@@ -160,10 +174,10 @@ const DisplyManageService = (props) => {
                             </div>
                         </div>
                         <div className="manage-srvs-sbmt-sec">
-                                <div className="manage-srvs-sbmt-btn-sec">
-                                    <input type="submit" value="Submit" />
-                                </div>
+                            <div className="manage-srvs-sbmt-btn-sec">
+                                <input type="submit" value="Submit" />
                             </div>
+                        </div>
                     </form>
                 </div>
             </Modal>
