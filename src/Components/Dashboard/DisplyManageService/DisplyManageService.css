@@ -42,7 +42,6 @@
 .mng-img-ttl .onlyimgsize img {
     width: 100%;
 }
-
 #mng-srvc-id {
     font-weight: 500;
     font-size: 17px;
@@ -460,14 +459,21 @@
         width: 70%;
     }
 }
+@media screen and (max-width: 800px) {
+    #mng-srvc-id-span{
+        font-weight: 500;
+        color: #b9b9b9;
+    }
+    #mng-srvc-id {
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
 
-
+/* 
 @media screen and (max-width: 970px) {}
 
 @media screen and (max-width: 900px) {}
-
-@media screen and (max-width: 800px) {}
-
 @media screen and (max-width: 500px) {}
 
 @media screen and (max-width: 422px) {}
@@ -478,4 +484,4 @@
 
 @media screen and (max-width: 334px) {}
 
-@media screen and (max-width: 280px) {}
+@media screen and (max-width: 280px) {} */

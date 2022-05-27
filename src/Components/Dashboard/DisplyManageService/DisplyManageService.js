@@ -114,7 +114,7 @@ const DisplyManageService = (props) => {
                 </div>
                 <h4>{ServiceName}</h4>
             </div>
-            <p id="mng-srvc-id">Service ID : Obe3Re544v346v</p>
+            <p id="mng-srvc-id"><span id="mng-srvc-id-span">Service ID :</span> Obe3Re544v346v</p>
             <div className="wrap-mng-srvc-tpc">
                 {
                     allServices.map(data => <p id="mng-srvc-topic">{data.topic}</p>)

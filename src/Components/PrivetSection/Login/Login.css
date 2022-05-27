@@ -109,10 +109,12 @@
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
     background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    box-shadow: 10px 10px 40px gray;
+    transition: .5s;
 }
 
 .login-form .login-sign-in-submit:hover {
-    background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+    background: -webkit-linear-gradient(left, #5b5ecc, #991cce);
 }
 
 .login-form .forgot-pass {
@@ -171,7 +173,7 @@
 
 .image-lgn {
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: 0;
     top: 0;
@@ -196,6 +198,7 @@
 
 .image-lgn::after {
     content: '';
+    z-index: 4;
     position: absolute;
     left: 0;
     top: 0;
@@ -210,7 +213,7 @@
 }
 
 .image-text-lgn {
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     left: 0;
     top: 50px;
@@ -225,11 +228,13 @@
 }
 
 .image-text-lgn h2 {
+    z-index: 5;
     margin-bottom: 10px;
     font-weight: normal;
 }
 
 .image-text-lgn p {
+    z-index: 5;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -266,7 +271,7 @@
 
 .lgn-img-btn {
     overflow: hidden;
-    z-index: 2;
+    z-index: 7;
     position: relative;
     width: 100px;
     height: 36px;
@@ -280,7 +285,7 @@
 
 .lgn-img-btn::after {
     content: '';
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     left: 0;
     top: 0;
@@ -339,6 +344,26 @@
     transform: translate3d(0, 0, 0);
 }
 
+/* back to home button */
+
+.home-btn-login-cmpnt {
+    position: absolute;
+    top: 4vh;
+    left: 10vh;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #0a0a0a;
+}
+
+.home-btn-login-cmpnt button {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    color: #e15402;
+}
+
+
+
 
 /* Make It Responsive  */
 
@@ -388,7 +413,11 @@
 }
 
 /* under 665px RESPONSIVE */
-
+@media (max-width: 780px) {
+    .home-btn-login-cmpnt {
+        left: 10%;
+    }
+}
 
 @media (max-width: 700px) {
     .login-cont {
@@ -435,17 +464,21 @@
         font-size: 15px;
         border-bottom: 1px solid #fff;
     }
+
     .login-cont .image-text-lgn p {
         font-size: 13px;
     }
+
     .lgn-img-btn {
         width: 73px;
         height: 35px;
         font-size: 13px;
     }
+
     .login-social-media li {
         margin: 25px 10px;
     }
+
     .login-social-media img {
         width: 35px;
         height: 35px;

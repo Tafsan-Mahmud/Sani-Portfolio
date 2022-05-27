@@ -1,6 +1,7 @@
 import React from 'react';
 import './Login.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -8,6 +9,9 @@ const Login = () => {
     // console.log(toggleInUpBtn)
     return (
         <div id='main-login-sec'>
+            <div className="home-btn-login-cmpnt">
+                <Link to="/home"><button><i class="fas fa-home"></i> Home</button></Link>
+            </div>
             <div className={toggleInUpBtn ? "login-cont s-signUp" : "login-cont "} >
                 <div className="login-form sign-in-lgn">
                     <form action="">
@@ -23,7 +27,6 @@ const Login = () => {
                         <button className="login-sign-in-submit" type='submit'> sign in</button>
                         <p className="forgot-pass">Forgot Password ?</p>
                         <div className="login-social-media">
-
                             <li><img src="https://www.africabaie.com/wp-content/uploads/2020/10/facebook-logo-2019.png" alt="" /></li>
                             <li><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" /></li>
                             <li><img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="" /></li>
