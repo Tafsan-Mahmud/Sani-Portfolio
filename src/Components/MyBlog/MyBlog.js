@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
 import './MyBlog.css';
 import BlogFakeData from '../fakeData2';
 import DisplyBlog from '../DisplyBlog/DisplyBlog';

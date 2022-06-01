@@ -16,6 +16,7 @@ import TotalOrderList from './Components/Dashboard/TotalOrderList/TotalOrderList
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddService from './Components/Dashboard/AddService/AddService';
 import Login from './Components/PrivetSection/Login/Login';
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 
 export const PageTheme = createContext();
 
@@ -55,6 +56,9 @@ function App() {
           </Route>
           <Route path="/my-booking">
             <MyBookingList></MyBookingList>
+          </Route>
+          <Route path="/ServiceDetail/:Sid">
+            <ServiceDetails></ServiceDetails>
           </Route>
           <Route path="/add-service">
             <AddService></AddService>

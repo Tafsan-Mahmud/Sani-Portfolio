@@ -7,6 +7,8 @@ import srvcPkCmng from './219983.png';
 import srvcPkCmng2 from './768px-Circle-icons-profile.svg.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudUploadAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 Modal.setAppElement('#root');
 
@@ -38,6 +40,7 @@ const DisplyManageService = (props) => {
             right: 'auto',
             bottom: 'auto',
             marginRight: '-50%',
+            // position: "absulate",
             overflow: "visible",
             transition: '1s',
             zindex: '50',
@@ -129,7 +132,7 @@ const DisplyManageService = (props) => {
             <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={false} style={customStyles} >
                 <div className="Manage-Service-Editing-sec">
                     <button className='btn-mng-srvs-modal-edit-close' onClick={closeModal}><FontAwesomeIcon icon={faTimesCircle} /></button>
-                    <form id='manage-main-form-edit' action="" autoComplete='off'>
+                    <div id='manage-main-form-edit' action="" autoComplete='off'>
                         <div className="manage-up-section">
                             <h4>Choose service image</h4>
                             <input type="file" name="" id="service-image" />
@@ -175,10 +178,10 @@ const DisplyManageService = (props) => {
                         </div>
                         <div className="manage-srvs-sbmt-sec">
                             <div className="manage-srvs-sbmt-btn-sec">
-                                <input type="submit" value="Submit" />
+                                <input onClick={props.handlenotify} type="submit" value="Submit" />
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </Modal>
         </div>

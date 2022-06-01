@@ -1,0 +1,112 @@
+#main-Service-details-pg {
+    min-height: 100vh;
+    background: #0a0d13;
+    padding-top: 100px;
+}
+
+.sample-nav-bar-ServiceDetail {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #0d1d2e9b;
+    backdrop-filter: blur(8px);
+    z-index: 5;
+}
+
+.the-sani-main-logo-ServiceDetail {
+    color: #c2c2c2;
+    letter-spacing: 0.5px;
+}
+
+.DLmode-BackHome-ServiceDetail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.DLmode-BackHome-ServiceDetail li {
+    color: #b3b3b3;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-right: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.DLmode-BackHome-ServiceDetail li:hover {
+    color: #d8d8d8;
+}
+
+.DLmode-BackHome-ServiceDetail span {
+    width: 4px;
+    height: 50px;
+    background: #cc4831;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.ServiceDetail-Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#detailServiceName-img {
+    border: 3px solid #cc4831;
+    padding: 5px 30px;
+    color: #c0c0c0;
+    font-size: 35px;
+    margin-top: 15px;
+}
+.detail-srvs-img{
+    width: 55px;
+    padding-right: 5px;
+}
+.content-details-services{
+    width: 100%;
+    padding: 50px;
+}
+.all-topic-details-srvs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.all-topic-details-srvs p{
+    color: #c2c2c2;
+    padding: 5px 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    background: #0f192b;
+}
+.detail-service-description {
+    color: #b8b8b8;
+}
+.booking-Specific-service{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.booking-Specific-service button{
+    padding: 5px 10px;
+    color: #c1c0c0;
+    font-weight: 500;
+    letter-spacing: .8px;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: .3s;
+    background: #c13c25;
+    /* box-shadow: 5px 5px 20px #121212; */
+}
+.booking-Specific-service button:hover{
+    transform: translateY(-2px);
+    background: #b23620;
+    /* box-shadow:5px 5px 50px #121212; */
+}

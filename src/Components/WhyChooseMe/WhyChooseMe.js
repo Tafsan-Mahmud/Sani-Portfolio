@@ -46,7 +46,6 @@ const WhyChooseMe = () => {
                                 <h3>Time Effeciency</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minima deserunt molestiae modi tempore atque nam rerum deleniti</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
