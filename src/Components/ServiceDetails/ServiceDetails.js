@@ -60,23 +60,43 @@ const ServiceDetails = () => {
                     </div>
                 </div>
                 <div className="Modal-boking-service">
-                    <Modal
+                    <Modal dialogClassName='xxxxxxxxxxxxxxxxxx'
                         show={show}
                         backdrop="static"
                         keyboard={false}
-                        centered
-                    >
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel exercitationem incidunt provident nulla eius quo dolores animi velit a labore quibusdam quae numquam debitis eum, blanditiis repellat aliquid, totam dolorem, dolor corrupti? Id sapiente ipsum, iste repellat pariatur accusantium, quaerat, vel totam temporibus consectetur cupiditate quibusdam facilis. Asperiores accusantium iure nemo saepe, aut iusto accusamus repellat quae explicabo, omnis eligendi sapiente perspiciatis! Incidunt aut fugiat aspernatur. Quod laboriosam sint officiis sequi pariatur voluptatibus nam aperiam commodi mollitia quo harum alias, veniam, saepe assumenda quia velit ex. Molestiae officia, nemo eius ducimus ullam nihil mollitia tempore, perferendis cum, nam eaque ratione.</p>
+                        centered >
+                        <button className='btn-mng-srvs-modal-edit-close' onClick={handleClose}><i class="fas fa-times"></i></button>
+                        <h3 id='bokking-form-dtl-srvc'>Booking form</h3>
+                        <div className="dtl-srvc-booking-form-sec">
+                            <form action="" autocomplete="off" style={{ paddingBottom: '20px' }}>
+                                <div className="dtl-srvc-booking-form-input-data">
+                                    <input type="text" required name="Name" />
+                                    <span>Your Name</span>
+                                    <div className="underline-dtl-srvc-booking-form"></div>
+                                </div>
+                                <div className="dtl-srvc-booking-form-input-data">
+                                    <input type='text' required name="Email" />
+                                    <span>Email</span>
+                                    <div className="underline-dtl-srvc-booking-form"></div>
+                                </div>
+                                <div className="dtl-srvc-booking-form-input-data">
+                                    <input type="number" required name="WhatsAppNumber" id="" />
+                                    <span>What's App Number</span>
+                                    <div className="underline-dtl-srvc-booking-form"></div>
+                                </div>
+                                <select id='dtl-srvc-booking-form-country-drpdwn' name='Country' value={value} onChange={(e) => countryChangeHandler(e.target.value)}>
+                                    {
+                                        allCountry.map(country => <option>{country.name}</option>)
+                                    }
 
-                        <select value={value} onChange={(e) => countryChangeHandler(e.target.value)}>
-                            {
-                                allCountry.map(country => <option>{country.name}</option>)
-                            }
-
-                        </select>
-
-
-                        <button onClick={handleClose}><i class="fas fa-money-check"></i> Booking</button>
+                                </select>
+                                <div className="manage-srvs-sbmt-sec">
+                                    <div className="manage-srvs-sbmt-btn-sec">
+                                        <input type="submit" value="Booking" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </Modal>
                 </div>
                 <div className="booking-Specific-service">

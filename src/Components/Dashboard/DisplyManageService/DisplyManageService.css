@@ -42,6 +42,7 @@
 .mng-img-ttl .onlyimgsize img {
     width: 100%;
 }
+
 #mng-srvc-id {
     font-weight: 500;
     font-size: 17px;
@@ -120,36 +121,31 @@
 
 
 .Manage-Service-Editing-sec {
-    width: 600px;
-    height: 100%;
     padding: 20px;
-    position: relative;
-    background: #dfdfdf;
+    overflow: hidden;
 }
 
 .btn-mng-srvs-modal-edit-close {
     position: absolute;
     right: -15px;
-    top: -20px;
-    font-size: 35px;
-    color: #ce0202;
-
+    top: -15px;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #ce0202;
 }
 
-.btn-mng-srvs-modal-edit-close::before {
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    top: 12px;
-    left: 6px;
-    border-radius: 20px;
-    background: #d5d5d5;
-    z-index: -1;
-}
-.manage-up-fack-image{
+
+.manage-up-fack-image {
     display: flex;
 }
+
 .manage-up-section input[type=file] {
     display: none;
 }
@@ -191,12 +187,14 @@
     border: 1.6px solid #242424;
     background-color: #91b49eed;
 }
-.manage-service-image-edit{
+
+.manage-service-image-edit {
     width: 30px;
     height: 30px;
     margin-left: 10px;
 }
-.manage-service-image-edit img{
+
+.manage-service-image-edit img {
     width: 100%;
 }
 
@@ -387,7 +385,7 @@
 .manage-srvs-sbmt-btn-sec {
     position: relative;
     overflow: hidden;
-    box-shadow: 7px 12px 11px #01010144;
+    box-shadow: 8px 9px 20px #0101015e;
 }
 
 .manage-srvs-sbmt-sec .manage-srvs-sbmt-btn-sec input[type="submit"] {
@@ -395,9 +393,9 @@
     outline: none;
     border: none;
     background: transparent;
-    color: #b8b8b8;
+    color: #c6c6c6;
     font-size: 18px;
-    width: 101px;
+    width: 110px;
     font-weight: 500;
     letter-spacing: 0.5px;
     padding: 5px 20px;
@@ -446,35 +444,43 @@
 
 
 
-@media screen and (max-width: 1234px) {
-    .Manage-Service-Editing-sec {
-        width: 450px;
-    }
-}
+ 
+
 @media screen and (max-width: 1050px) {
-    .Manage-Service-Editing-sec {
-        width: 280px;
-    }
     .manage-srvc-todo-add-sec input {
         width: 70%;
     }
 }
+
 @media screen and (max-width: 800px) {
-    #mng-srvc-id-span{
+    #mng-srvc-id-span {
         font-weight: 500;
         color: #b9b9b9;
     }
+
     #mng-srvc-id {
         font-weight: 400;
         font-size: 15px;
     }
+
+    .modal-set-mddl-rspnsv-pdng {
+        padding: 5px 25px;
+    }
 }
+@media screen and (max-width: 590px) {
+    .btn-mng-srvs-modal-edit-close {
+       right: -5px;
+       top: -5px;
+   } 
+}
+
+
 
 /* 
 @media screen and (max-width: 970px) {}
 
 @media screen and (max-width: 900px) {}
-@media screen and (max-width: 500px) {}
+
 
 @media screen and (max-width: 422px) {}
 
